@@ -18,7 +18,7 @@ def register():
         connection = create_connection()
         
         res = execute_query(connection, procedure='AddKhachHang', params=(ho_va_ten, sdt, email, dia_chi, hashed_password))
-        if res[0][0] == 'Email already registered':
+        if res and res[0][0] == 'Email already registered':
             flash('Email đã tồn tại')
             return redirect(url_for('register.register'))
         return redirect(url_for('login.login'))
