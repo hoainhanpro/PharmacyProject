@@ -1,7 +1,13 @@
 from flask import Flask, redirect, url_for
 from routes import login_bp, register_bp
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 app = Flask(__name__)
+
+app.secret_key=os.getenv('PASSWORD')
 
 @app.route('/')
 def home():

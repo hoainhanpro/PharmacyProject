@@ -21,17 +21,24 @@ def create_connection():
         print(f"The error '{e}' occurred")
     return connection
 
-def execute_query(connection, query, params=None):
+def execute_query(connection, query=None, procedure=None, params=None):
     cursor = connection.cursor()
+    result = None
     try:
-        if params:
-            cursor.execute(query, params)
-        else:
-            cursor.execute(query)
-        connection.commit()
-        print("Query executed successfully")
+        if procedure:
+            cursor.callproc(procedure, params)
+            for result_set in cursor.stored_results():
+                result = result_set.fetchall()
+        elif query:
+            if params:
+                cursor.execute(query, params)
+            else:
+                cursor.execute(query)
+            connection.commit()
+            result = cursor.fetchall()
     except Error as e:
         print(f"The error '{e}' occurred")
+    return result
 
 def fetch_query(connection, query, params=None):
     cursor = connection.cursor(dictionary=True)
