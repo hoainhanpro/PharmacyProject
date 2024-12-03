@@ -1,5 +1,8 @@
 *.crt.pem
 notmain.py
+note.txt
+.rasa/
+.testing/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

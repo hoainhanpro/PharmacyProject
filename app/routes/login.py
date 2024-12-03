@@ -1,6 +1,6 @@
 import hashlib
-from flask import Blueprint, render_template, request, redirect, url_for, flash
-from services import create_connection, execute_query, fetch_query
+from flask import Blueprint, render_template, request, redirect, session, url_for, flash
+from services import create_connection, execute_query
 
 login_bp = Blueprint('login', __name__)
 
@@ -16,5 +16,7 @@ def login():
         if res and res[0][0] == 'Login failed':
             flash('Đăng nhập thất bại')
             return redirect(url_for('login.login'))
-        return redirect(url_for('home'))
+        
+        session['username'] = username
+        return redirect(url_for('homepage.homepage'))
     return render_template('login.html')

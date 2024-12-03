@@ -22,7 +22,7 @@ def create_connection():
     return connection
 
 def execute_query(connection, query=None, procedure=None, params=None):
-    cursor = connection.cursor()
+    cursor = connection.cursor(buffered=True)
     result = None
     try:
         if procedure:
@@ -34,8 +34,8 @@ def execute_query(connection, query=None, procedure=None, params=None):
                 cursor.execute(query, params)
             else:
                 cursor.execute(query)
-            connection.commit()
-            result = cursor.fetchall()
+        connection.commit()
+        result = cursor.fetchall()
     except Error as e:
         print(f"The error '{e}' occurred")
     return result

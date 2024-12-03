@@ -1,0 +1,43 @@
+Disease,Precaution_0,Precaution_1,Precaution_2,Precaution_3
+AIDS,tránh vết thương hở,đeo thiết bị bảo hộ nếu có thể,tham khảo ý kiến bác sĩ,theo dõi  
+Mụn,tắm hai lần,tránh đồ ăn nhiều dầu mỡ và gia vị, Uống đủ nước,tránh sử dụng quá nhiều sản phẩm  
+Viêm gan do rượu,ngừng uống rượu,tham khảo ý kiến bác sĩ,dùng thuốc,theo dõi  
+Dị ứng,bôi calamine,băng vùng bị ảnh hưởng,sử dụng đá để chườm ngứa,null
+Viêm khớp,tập thể dục,sử dụng liệu pháp nóng và lạnh,thử châm cứu,mát-xa  
+Hen phế quản,chuyển sang mặc quần áo rộng,rít thở sâu,tránh xa tác nhân gây bệnh,tìm kiếm sự giúp đỡ  
+Thoái hóa đốt sống cổ,sử dụng đệm nhiệt hoặc túi chườm lạnh,tập thể dục,dùng thuốc giảm đau không kê đơn,tham khảo ý kiến bác sĩ  
+Thủy đậu,sử dụng lá neem khi tắm,tiêu thụ lá neem,tin vào vắc-xin,tránh nơi đông người  
+Ứ mật mãn tính,tắm nước lạnh,thuốc chống ngứa,tham khảo ý kiến bác sĩ,ăn uống lành mạnh  
+Cảm lạnh,uống đồ uống giàu vitamin C,dùng hơi nước,tránh thực phẩm lạnh,giữ nhiệt độ cơ thể ổn định  
+Covid,che miệng,giãn cách xã hội,đeo khẩu trang,dùng thuốc  
+Sốt xuất huyết,uống nước ép lá đu đủ,tránh đồ ăn nhiều dầu mỡ và gia vị,giữ muỗi xa,giữ cơ thể được Hydrat hóa  
+Tiểu đường,ăn uống cân bằng,tập thể dục,tham khảo ý kiến bác sĩ,theo dõi  
+Bệnh trĩ,tránh đồ ăn nhiều dầu mỡ và gia vị,tiêu thụ cây phỉ,tắm nước ấm với muối Epsom,uống nước lô hội  
+Phản ứng với thuốc,ngừng kích thích,tham khảo ý kiến bệnh viện gần nhất,ngừng uống thuốc,theo dõi  
+Nhiễm nấm,tắm hai lần,sử dụng Detol hoặc neem trong nước tắm,giữ vùng bị nhiễm khô,sử dụng vải sạch  
+Trào ngược dạ dày thực quản,tránh đồ ăn nhiều dầu mỡ và gia vị,không nằm sau khi ăn,duy trì cân nặng hợp lý,tập thể dục  
+Viêm dạ dày ruột,ngừng ăn thực phẩm rắn một thời gian,hãy thử uống từng ngụm nước nhỏ,nghỉ ngơi,đi vào ăn uống từ từ  
+Đau tim,Gọi cấp cứu,nhai aspirin,giữ bình tĩnh,null
+Viêm gan A,Tham khảo bệnh viện gần nhất,rửa tay sạch sẽ,tránh đồ ăn nhiều dầu mỡ và gia vị,dùng thuốc  
+Viêm gan B,tham khảo bệnh viện gần nhất,tiêm phòng,ăn uống lành mạnh,dùng thuốc  
+Viêm gan C,Tham khảo bệnh viện gần nhất,tiêm phòng,ăn uống lành mạnh,dùng thuốc  
+Viêm gan D,tham khảo ý kiến bác sĩ,dùng thuốc,ăn uống lành mạnh,theo dõi  
+Viêm gan E,ngừng uống rượu,nghỉ ngơi,tham khảo ý kiến bác sĩ,dùng thuốc  
+Tăng huyết áp,thiền,ngâm mình trong muối,giảm căng thẳng,ngủ đủ giấc  
+Cường giáp,ăn uống lành mạnh,mát-xa,sử dụng bạc hà,điều trị bằng i-ốt phóng xạ  
+Hạ đường huyết,nằm nghiêng,bắt mạch,uống đồ ngọt,tham khảo ý kiến bác sĩ  
+Suy giáp,giảm căng thẳng,tập thể dục,ăn uống lành mạnh,ngủ đủ giấc  
+Bệnh chốc,ngâm vùng bị ảnh hưởng trong nước ấm,sử dụng kháng sinh,loại bỏ vảy bằng vải ẩm,nói chuyện với bác sĩ  
+Vàng da,uống nhiều nước,sử dụng cây kế sữa,ăn trái cây và thực phẩm giàu chất xơ,dùng thuốc  
+Sốt rét,Tham khảo bệnh viện gần nhất,tránh đồ ăn nhiều dầu mỡ,tránh thực phẩm không có nguồn gốc động vật,giữ muỗi xa  
+Đau nửa đầu,thiền,giảm căng thẳng,sử dụng kính polaroid khi ra ngoài,nói chuyện với bác sĩ  
+Viêm xương khớp,acetaminophen,tham khảo bệnh viện gần nhất,theo dõi,ngâm mình trong muối  
+Xuất huyết não,mát-xa,ăn uống lành mạnh,tập thể dục,tham khảo ý kiến bác sĩ  
+Chóng mặt kịch phát,nằm xuống,tránh thay đổi đột ngột của cơ thể,tránh cử động đầu đột ngột,thư giãn  
+Loét dạ dày tá tràng,tránh đồ ăn nhiều dầu mỡ và gia vị,tiêu thụ thực phẩm probiotic,loại bỏ sữa,giới hạn rượu  
+Viêm phổi,tham khảo ý kiến bác sĩ,dùng thuốc,nghỉ ngơi,theo dõi  
+Vẩy nến,rửa tay bằng nước ấm có xà phòng,ngừng chảy máu bằng cách giữ áp lực,tham khảo ý kiến bác sĩ,ngâm mình trong muối  
+Lao,che miệng,tham khảo ý kiến bác sĩ,dùng thuốc,nghỉ ngơi  
+Bệnh thương hàn,ăn rau củ nhiều calo,liệu pháp kháng sinh,tham khảo ý kiến bác sĩ,dùng thuốc  
+Nhiễm trùng tiết niệu,uống nhiều nước,tăng cường bổ sung vitamin C,uống nước cranberry,tiêu thụ probiotics  
+Giản tĩnh mạch,nằm ngửa và nâng chân cao,sử dụng thuốc mỡ,sử dụng nén tĩnh mạch,không đứng yên quá lâu  

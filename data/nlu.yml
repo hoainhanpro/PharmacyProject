@@ -1,0 +1,386 @@
+version: "3.1"
+
+nlu:
+- lookup: symptom
+  examples: |
+    - Mụn mủ
+    - Táo bón
+    - Uể oải
+    - Móng tay dễ gãy
+    - Sốt phát ban
+    - Đờm nhầy
+    - Ớn lạnh
+    - Đau khớp
+    - Đốm ở cổ họng
+    - Khó tiêu
+    - Tâm trạng thay đổi
+    - Mắt và mặt sưng
+    - Ho
+    - Đau đầu
+    - Phù nề chân
+    - Nôn mửa
+    - Run rẩy
+    - Nổi mạch máu
+    - Ho ra máu
+    - Tiểu buốt
+    - Viêm quanh móng
+    - Đờm
+    - Tràn dịch
+    - Rối loạn
+    - Mẫn đỏ quanh mũi
+    - Sốt nhẹ
+    - Khó chịu
+    - Tim đập nhanh
+    - Đau họng
+    - Đau sau mắt
+    - Tăng axit
+    - Mất nước
+    - Xổ mũi
+    - Rối loạn kinh nguyệt
+    - Yếu cơ
+    - Nước tiểu đậm màu
+    - Ngứa
+    - Liệt nửa người
+    - Teo cơ
+    - Đau lưng
+    - Đau đầu gối
+    - Bong tróc da
+    - Chán ăn
+    - Từng được truyền máu
+    - Trầm cảm
+    - Sụt cân
+    - Khó thở
+    - Khô và ngứa môi
+    - Mệt mỏi
+    - Tiểu ra máu
+    - Quan hệ ngoài hôn nhân
+    - Mụn đầu đen
+    - Mắt trũng sâu
+    - Vàng da
+    - Thay đổi tâm trạng
+    - Tiểu nhiều lần
+    - Lo lắng
+    - Đa niệu
+    - Bầm tím
+    - Tăng cân
+    - Mờ mắt
+    - Đau khi đi
+    - Béo phì
+    - Mất cân bằng
+    - Nghẹt mũi
+    - Chuột rút
+    - Xuất huyết dạ dày
+    - Phát ban
+    - Đau bụng
+    - Đau hậu môn
+    - Sưng khuỷu tứ chi
+    - Phát ban họng
+    - Yếu chân tay
+    - Ngứa rát vùng hậu môn
+    - Di truyển
+    - Đói quá mức
+    - Đau cổ
+    - Móng có vết nứt nhỏ
+    - Chóng mặt
+    - Cứng cơ khi di chuyển
+    - Nấm phấn trắng
+    - Hôn mê
+    - Đầy hơi
+    - Chướng bụng
+    - Chàm và rỉ nước
+    - ĐƯờng huyết không ổn định
+    - Xưng khớp
+    - Đốm sắc tố
+    - Nước tiểu có mùi hôi
+    - Tay chân lạnh
+    - Nước tiểu vàng
+    - Sưng tĩnh mạch
+    - Nhịp tim không đều
+    - Hắt hơi liên tục
+    - Sử dụng kim tiêm không vệ sinh
+    - Đi ngoài ra máu
+    - Đau ngực
+    - Rối loạn tầm nhìn
+    - Đau khớp hông
+    - Chảy nước mắt
+    - Phát ban nốt
+    - Nói lắp
+    - Kích động
+    - Áp lực xoang
+    - Mắt vàng
+    - Mất thăng bằng
+    - Bồn chồn
+    - Mất vị giác
+    - Tiền sử có sử dụng rượu
+    - Thèm ăn
+    - Đau dạ dày
+    - Mụn nước
+    - Đỏ mắt
+    - Sốt cao
+    - Đau cơ
+    - Đờm nâu
+    - Đau bàng quang
+    - Mất khứu giác
+    - Hạch bạch hầu
+    - Mất chức năng gan
+    - Phình bụng
+    - Đau khi đại tiện
+    - Ngứa da
+    - Đổ mồ hôi
+    - Mất tập trung
+    - Bướu cổ
+    - Cứng cổ
+    - Tiêu chảy
+    - Nổi mẫn đỏ
+
+- lookup: disease
+  examples: |
+    - AIDS
+    - Mụn
+    - Viêm gan do rượu
+    - Dị ứng
+    - Viêm khớp
+    - Hen phế quản
+    - Thoái hóa đốt sống cổ
+    - Thủy đậu
+    - Ứ mật mãn tính
+    - Cảm lạnh
+    - Covid
+    - Sốt xuất huyết
+    - Tiểu đường
+    - Bệnh trĩ
+    - Phản ứng với thuốc
+    - Nhiễm nấm
+    - Trào ngược dạ dày thực quản
+    - Viêm dạ dày ruột
+    - Đau tim
+    - Viêm gan A
+    - Viêm gan B
+    - Viêm gan C
+    - Viêm gan D
+    - Viêm gan E
+    - Tăng huyết áp
+    - Cường giáp
+    - Hạ đường huyết
+    - Suy giáp
+    - Bệnh chốc
+    - Vàng da
+    - Sốt rét
+    - Đau nửa đầu
+    - Viêm xương khớp
+    - Xuất huyết não
+    - Chóng mặt kịch phát
+    - Loét dạ dày tá tràng
+    - Viêm phổi
+    - Vẩy nến
+    - Lao
+    - Bệnh thương hàn
+    - Nhiễm trùng tiết niệu
+    - Giãn tĩnh mạch
+
+- intent: greet
+  examples: |
+    - Xin chào
+    - Chào bạn
+    - Hello
+    - Hi chatbot
+    - Chatbot ơi
+    - Chào!
+    - Hey
+
+- intent: goodbye
+  examples: |
+    - Tạm biệt
+    - Hẹn gặp lại
+    - Bye
+    - Cảm ơn, tạm biệt
+    - Chào tạm biệt
+    - Bye chatbot
+    - Tạm biệt bạn nhé
+
+- intent: bot_challenge
+  examples: |
+    - Bạn là người hay máy?
+    - Chatbot này là gì?
+    - Bạn có phải là con người không?
+    - Bạn được tạo ra để làm gì?
+    - Bạn hoạt động như thế nào?
+    - Làm sao bạn biết về triệu chứng của tôi?
+    - Ai đã tạo ra bạn?
+    - Bạn có thông minh không?
+    - Bạn có phải là bác sĩ không?
+    - Chatbot này hoạt động dựa trên cái gì?
+    - Bạn học những thông tin này từ đâu?
+    - Tại sao tôi nên tin bạn?
+    - Bạn có chắc chắn về thông tin mình cung cấp không?
+
+- intent: ask_disease
+  examples: |
+    - [AIDS](disease) có phải là bệnh truyền nhiễm không?
+    - Làm thế nào để phòng tránh [mụn](disease) hiệu quả?
+    - [Viêm gan do rượu](disease) có nguy hiểm không?
+    - [Dị ứng](disease) có cần điều trị ngay không?
+    - [Viêm khớp](disease) có thể chữa khỏi không?
+    - [Hen phế quản](disease) có di truyền không?
+    - [Thoái hóa đốt sống cổ](disease) gây ra triệu chứng gì?
+    - [Thủy đậu](disease) lây lan qua đường nào?
+    - [Ứ mật mãn tính](disease) có ảnh hưởng đến gan không?
+    - [Cảm lạnh](disease) có cần uống thuốc kháng sinh không?
+    - [Covid](disease) có triệu chứng giống cảm lạnh không?
+    - [Sốt xuất huyết](disease) có thể gây nguy hiểm đến tính mạng không?
+    - [Tiểu đường](disease) type 2 có thể chữa khỏi không?
+    - [Bệnh trĩ](disease) có phải phẫu thuật không?
+    - Phản ứng với thuốc cần xử lý thế nào nếu liên quan đến [dị ứng](disease)?
+    - [Nhiễm nấm](disease) da có dễ lây không?
+    - [Trào ngược dạ dày thực quản](disease) gây đau như thế nào?
+    - [Viêm dạ dày ruột](disease) cần tránh ăn những thực phẩm nào?
+    - [Đau tim](disease) có triệu chứng ra sao?
+    - [Viêm gan A](disease) có thể phòng ngừa bằng cách nào?
+    - [Viêm gan B](disease) có chữa khỏi hoàn toàn không?
+    - [Viêm gan C](disease) khác gì so với viêm gan B?
+    - [Viêm gan D](disease) có lây qua đường ăn uống không?
+    - [Viêm gan E](disease) nguy hiểm nhất với đối tượng nào?
+    - [Tăng huyết áp](disease) có thể dẫn đến bệnh gì?
+    - [Cường giáp](disease) có gây sụt cân không?
+    - [Hạ đường huyết](disease) có triệu chứng ra sao?
+    - [Suy giáp](disease) có cần dùng thuốc cả đời không?
+    - [Bệnh chốc](disease) là bệnh gì?
+    - [Vàng da](disease) có phải là dấu hiệu của bệnh gan không?
+    - [Sốt rét](disease) lây qua đường nào?
+    - [Đau nửa đầu](disease) có thể gây buồn nôn không?
+    - [Viêm xương khớp](disease) có cần phẫu thuật không?
+    - [Xuất huyết não](disease) có thể chữa khỏi không?
+    - [Chóng mặt kịch phát](disease) có nguy hiểm không?
+    - [Loét dạ dày tá tràng](disease) cần tránh ăn gì?
+    - [Viêm phổi](disease) có gây khó thở không?
+    - [Vẩy nến](disease) có lây không?
+    - [Lao](disease) có thể điều trị khỏi không?
+    - [Bệnh thương hàn](disease) có thể phòng ngừa bằng cách nào?
+    - [Nhiễm trùng tiết niệu](disease) có thể gây đau bụng không?
+    - [Giãn tĩnh mạch](disease) có điều trị được không?
+
+- intent: provide_symptom
+  examples: |
+    - Tôi bị [sốt cao](symptom).
+    - Tôi cảm thấy [đau bụng](symptom).
+    - Triệu chứng của tôi là [khó thở](symptom).
+    - Tôi đang gặp vấn đề với [đau đầu](symptom).
+    - Tôi bị [ngứa da](symptom) rất khó chịu.
+    - Tôi thấy mình bị [mất khứu giác](symptom).
+    - Hôm nay tôi bị [chóng mặt](symptom).
+    - Tôi bị [mất thăng bằng](symptom).
+    - Tôi đang bị [nước tiểu vàng](symptom).
+    - Tôi bị [đau họng](symptom) suốt từ hôm qua.
+    - Tôi bị [mụn nước](symptom) trên tay.
+    - Tôi bị [đau khớp hông](symptom) và [sưng khuỷu tay](symptom).
+    - Tôi thấy triệu chứng [đau lưng](symptom) xuất hiện.
+    - Tôi có [đỏ mắt](symptom) và [xổ mũi](symptom).
+    - Tôi bị [rối loạn kinh nguyệt](symptom).
+    - Tôi nghĩ mình bị [đau ngực](symptom).
+    - Tôi có triệu chứng [nôn mửa](symptom).
+    - Gần đây tôi thấy [mắt trũng sâu](symptom).
+    - Tôi bị [phát ban](symptom) trên da.
+    - Tôi thấy [mất tập trung](symptom) trong vài ngày nay.
+    - Tôi bị [ngứa rát vùng hậu môn](symptom).
+    - Tôi bị [đi ngoài ra máu](symptom).
+    - Tôi thấy mình bị [sốt phát ban](symptom).
+    - Tôi bị [mất vị giác](symptom).
+    - Tôi bị [ho ra máu](symptom) và cảm thấy [uể oải](symptom).
+    - Tôi đang gặp triệu chứng [bong tróc da](symptom).
+    - Tôi thấy mình bị [đau khớp](symptom).
+    - Tôi bị [sưng tĩnh mạch](symptom).
+    - Tôi đang gặp triệu chứng [phù nề chân](symptom).
+    - Tôi bị [khó tiêu](symptom) trong mấy ngày nay.
+    - Tôi có triệu chứng [tăng cân](symptom).
+    - Tôi bị [tiêu chảy](symptom) rất nặng.
+    - Tôi thấy [đau khi đại tiện](symptom).
+    - Tôi có triệu chứng [rụng tóc](symptom).
+    - Tôi bị [đầy hơi](symptom) và cảm thấy [buồn nôn](symptom).
+    - Tôi có [đốm sắc tố](symptom) trên da.
+    - Tôi bị [tăng axit](symptom) trong dạ dày.
+    - Tôi bị [hắt hơi liên tục](symptom).
+
+- intent: deny
+  examples: |
+    - không
+    - không cần
+    - không phải
+    - không muốn
+    - không cần nữa
+    - thôi
+    - dừng lại
+    - tôi nghĩ vậy là đủ
+    - vậy là được rồi
+    - không, cảm ơn
+    - không cần thêm nữa
+    - không đâu
+    - đủ rồi
+    - dừng
+
+- intent: confirm
+  examples: |
+    - Đúng vậy
+    - Vâng
+    - Đúng rồi
+    - Đúng
+    - Phải
+    - Chính xác
+    - Ừ
+    - Ừ đúng
+    - Đúng như vậy
+    - Tôi đồng ý
+    - Chuẩn
+    - Đúng thế
+    - Chính là nó
+    - Đồng ý
+    - Đúng, là vậy
+    - Đúng, tôi nghĩ thế
+    - Ừ, đúng vậy
+    - Chính xác như bạn nói
+    - Phải, bạn hiểu đúng rồi
+    - Đúng, là bệnh này
+
+- intent: ask_precaution
+  examples: |
+    - Làm thế nào để phòng ngừa [AIDS](disease)?
+    - [Mụn](disease) có cách nào ngăn ngừa không?
+    - Biện pháp phòng ngừa [Viêm gan do rượu](disease) là gì?
+    - Cách phòng tránh [Dị ứng](disease) hiệu quả?
+    - [Viêm khớp](disease) có thể phòng ngừa được không?
+    - [Hen phế quản](disease) có cách điều trị nào để ngừa tái phát không?
+    - Cách phòng ngừa [Thoái hóa đốt sống cổ](disease)?
+    - Phòng tránh [Thủy đậu](disease) như thế nào?
+    - Làm sao để ngừa [Ứ mật mãn tính](disease)?
+    - Làm gì để tránh bị [Cảm lạnh](disease)?
+    - [Covid](disease) có biện pháp phòng ngừa nào hiệu quả không?
+    - Cách phòng tránh [Sốt xuất huyết](disease)?
+    - [Tiểu đường](disease) có biện pháp phòng ngừa không?
+    - Cách phòng tránh [Bệnh trĩ](disease)?
+    - Làm thế nào để phòng ngừa [Phản ứng với thuốc](disease)?
+    - Phòng ngừa [Nhiễm nấm](disease) bằng cách nào?
+    - Làm sao để phòng ngừa [Trào ngược dạ dày-thực quản](disease)?
+    - Phòng tránh [Viêm dạ dày-ruột](disease) như thế nào?
+    - Cách ngăn ngừa [Đau tim](disease)?
+    - Làm thế nào để phòng ngừa [Viêm gan A](disease)?
+    - Cách phòng ngừa [Viêm gan B](disease)?
+    - Làm sao để phòng tránh [Viêm gan C](disease)?
+    - Biện pháp phòng ngừa [Viêm gan D](disease)?
+    - Làm thế nào để phòng tránh [Viêm gan E](disease)?
+    - Phòng ngừa [Tăng huyết áp](disease) bằng cách nào?
+    - Cách phòng tránh [Cường giáp](disease)?
+    - Làm sao để ngừa [Hạ đường huyết](disease)?
+    - Làm thế nào để phòng ngừa [Suy giáp](disease)?
+    - Phòng ngừa [Bệnh chốc](disease) như thế nào?
+    - Biện pháp phòng ngừa [Vàng da](disease)?
+    - Cách phòng ngừa [Sốt rét](disease)?
+    - Phòng ngừa [Đau nửa đầu](disease) như thế nào?
+    - Làm sao để phòng ngừa [Viêm xương khớp](disease)?
+    - Cách phòng ngừa [Xuất huyết não](disease)?
+    - Làm gì để phòng tránh [Chóng mặt kịch phát](disease)?
+    - Biện pháp phòng ngừa [Loét dạ dày tá tràng](disease)?
+    - Phòng ngừa [Viêm phổi](disease) như thế nào?
+    - Cách phòng ngừa [Vẩy nến](disease)?
+    - Phòng tránh [Lao](disease) hiệu quả?
+    - Làm sao để phòng ngừa [Bệnh thương hàn](disease)?
+    - Cách phòng ngừa [Nhiễm trùng tiết niệu](disease)?
+    - Biện pháp phòng ngừa [Giãn tĩnh mạch](disease)?

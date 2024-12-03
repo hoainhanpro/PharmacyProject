@@ -1,0 +1,29 @@
+version: "3.1"
+
+stories:
+- story: Nhập triệu chứng và từ chối
+  steps:
+    - intent: provide_symptom
+      entities:
+        - symptom: "đau đầu"
+    - action: action_add_symptom
+    - intent: provide_symptom
+      entities:
+        - symptom: "sốt"
+    - action: action_add_symptom
+    - intent: deny
+    - action: action_predict_disease
+
+- story: User asks about a disease in dataset
+  steps:
+    - intent: ask_disease
+      entities:
+        - disease: "Covid"
+    - action: action_provide_disease_info
+
+- story: User asks about a disease precaution in dataset
+  steps:
+    - intent: ask_precaution
+      entities:
+        - disease: "Covid"
+    - action: action_provide_disease_precaution

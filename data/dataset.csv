@@ -1,0 +1,314 @@
+Disease,Symptom_0,Symptom_1,Symptom_2,Symptom_3,Symptom_4,Symptom_5,Symptom_6,Symptom_7,Symptom_8,Symptom_9,Symptom_10,Symptom_11,Symptom_12,Symptom_13,Symptom_14,Symptom_15,Symptom_16,Check
+AIDS,Teo cơ,Đốm ở cổ họng,Sốt cao,Quan hệ ngoài hôn nhân,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+AIDS,Đốm ở cổ họng,Sốt cao,Quan hệ ngoài hôn nhân,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+AIDS,Teo cơ,Sốt cao,Quan hệ ngoài hôn nhân,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+AIDS,Teo cơ,Đốm ở cổ họng,Quan hệ ngoài hôn nhân,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+AIDS,Teo cơ,Đốm ở cổ họng,Sốt cao,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Mụn,Phát ban,Mụn mủ,Mụn đầu đen,Rối loạn,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Mụn,Mụn mủ,Mụn đầu đen,Rối loạn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Mụn,Phát ban,Mụn đầu đen,Rối loạn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Mụn,Phát ban,Mụn mủ,Rối loạn,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Mụn,Phát ban,Mụn mủ,Mụn đầu đen,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Phình bụng,Chướng bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Vàng da,Đau bụng,Phình bụng,Chướng bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Đau bụng,Phình bụng,Chướng bụng,Tiền sử có sử dụng rượu,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Đau bụng,Phình bụng,Chướng bụng,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Đau bụng,Phình bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Đau bụng,Chướng bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Đau bụng,Phình bụng,Chướng bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan do rượu,Nôn mửa,Vàng da,Đau bụng,Phình bụng,Chướng bụng,Tiền sử có sử dụng rượu,Tràn dịch,null,null,null,null,null,null,null,null,null,null,true
+Dị ứng,Run rẩy,Ớn lạnh,Chảy nước mắt,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Dị ứng,Hắt hơi liên tục,Run rẩy,Chảy nước mắt,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Dị ứng,Hắt hơi liên tục,Run rẩy,Ớn lạnh,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Dị ứng,Hắt hơi liên tục,Run rẩy,Ớn lạnh,Chảy nước mắt,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Dị ứng,Hắt hơi liên tục,Ớn lạnh,Chảy nước mắt,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Yếu cơ,Cứng cổ,Xưng khớp,Cứng cơ khi di chuyển,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Cứng cổ,Xưng khớp,Cứng cơ khi di chuyển,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Yếu cơ,Xưng khớp,Cứng cơ khi di chuyển,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Yếu cơ,Cứng cổ,Cứng cơ khi di chuyển,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Yếu cơ,Cứng cổ,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm khớp,Yếu cơ,Cứng cổ,Xưng khớp,Cứng cơ khi di chuyển,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Ho,Sốt cao,Khó thở,Di truyển,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Ho,Khó thở,Di truyển,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Ho,Sốt cao,Di truyển,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Ho,Sốt cao,Khó thở,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Ho,Sốt cao,Khó thở,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Ho,Sốt cao,Khó thở,Di truyển,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,null,true
+Hen phế quản,Mệt mỏi,Sốt cao,Khó thở,Di truyển,Đờm nhầy,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Đau lưng,Yếu chân tay,Đau cổ,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Yếu chân tay,Đau cổ,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Đau lưng,Đau cổ,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Đau lưng,Yếu chân tay,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Đau lưng,Yếu chân tay,Đau cổ,Chóng mặt,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thoái hoá đốt sống,Đau lưng,Yếu chân tay,Đau cổ,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Chán ăn,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Mệt mỏi,Uể oải,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Uể oải,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Thuỷ đậu,Ngứa,Phát ban,Mệt mỏi,Sốt cao,Đau đầu,Chán ăn,Sốt nhẹ,Hạch bạch hầu,Khó chịu,Nổi mẫn đỏ,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Nôn mửa,Vàng da,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Vàng da,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Vàng da,Khó chịu,Chán ăn,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Vàng da,Khó chịu,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Vàng da,Khó chịu,Chán ăn,Đau bụng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Vàng da,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Nôn mửa,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Ứ mật mãn tính,Ngứa,Vàng da,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Mệt mỏi,Ho,Sốt cao,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Ho,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Đau đầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Đau đầu,Hạch bạch hầu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Ho,Sốt cao,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Cảm lạnh,Hắt hơi liên tục,Ớn lạnh,Mệt mỏi,Sốt cao,Đau đầu,Hạch bạch hầu,Khó chịu,Đờm,Đau họng,Đỏ mắt,Áp lực xoang,Xổ mũi,Nghẹt mũi,Đau ngực,Mất khứu giác,Đau cơ,null,true
+Covid,Mệt mỏi,Sốt cao,Mất vị giác,Ho,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Sốt cao,Mất vị giác,Ho,Mệt mỏi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Ho,Sốt cao,Mệt mỏi,Mất vị giác,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Mất vị giác,Mệt mỏi,Sốt cao,Ho,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Sốt cao,Ho,Mệt mỏi,Mất vị giác,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Mệt mỏi,Mất khứu giác,Sốt cao,Ho,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Mất khứu giác,Mệt mỏi,Sốt cao,Ho,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Mất vị giác,Ho,Mệt mỏi,Sốt cao,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Covid,Sốt cao,Mệt mỏi,Ho,Mất vị giác,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,true
+Sốt xuất huyết,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,Nổi mẫn đỏ,null,null,null,null,true
+Sốt xuất huyết,Phát ban,Ớn lạnh,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Chán ăn,Đau sau mắt,Đau lưng,Khó chịu,Đau cơ,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Sụt cân,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Bồn chồn,Uể oải,ĐƯờng huyết không ổn định,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Tiểu đường,Mệt mỏi,Sụt cân,Bồn chồn,Uể oải,Mờ mắt,Béo phì,Đói quá mức,Thèm ăn,Đa niệu,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Táo bón,Đau khi đại tiện,Đau hậu môn,Ngứa rát vùng hậu môn,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Táo bón,Đau khi đại tiện,Đau hậu môn,Đi ngoài ra máu,Ngứa rát vùng hậu môn,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Táo bón,Đau khi đại tiện,Đi ngoài ra máu,Ngứa rát vùng hậu môn,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Đau khi đại tiện,Đau hậu môn,Đi ngoài ra máu,Ngứa rát vùng hậu môn,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Táo bón,Đau khi đại tiện,Đau hậu môn,Đi ngoài ra máu,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh trĩ,Táo bón,Đau hậu môn,Đi ngoài ra máu,Ngứa rát vùng hậu môn,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Phát ban,Đau dạ dày,Tiểu buốt,Tiểu ra máu,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Ngứa,Phát ban,Đau dạ dày,Tiểu buốt,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Ngứa,Phát ban,Đau dạ dày,Tiểu ra máu,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Ngứa,Phát ban,Tiểu buốt,Tiểu ra máu,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Ngứa,Đau dạ dày,Tiểu buốt,Tiểu ra máu,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Phản ứng với thuốc,Ngứa,Phát ban,Đau dạ dày,Tiểu buốt,Tiểu ra máu,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm nấm,Ngứa,Phát ban,Phát ban nốt,Đốm sắc tố,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm nấm,Ngứa,Phát ban,Đốm sắc tố,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm nấm,Phát ban,Phát ban nốt,Đốm sắc tố,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm nấm,Ngứa,Phát ban nốt,Đốm sắc tố,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm nấm,Ngứa,Phát ban,Phát ban nốt,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Tăng axit,Nôn mửa,Ho,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Tăng axit,Phát ban họng,Ho,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Tăng axit,Phát ban họng,Nôn mửa,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Tăng axit,Phát ban họng,Nôn mửa,Ho,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Tăng axit,Phát ban họng,Nôn mửa,Ho,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Tăng axit,Phát ban họng,Nôn mửa,Ho,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,true
+Trào ngược dạ dày thực quản,Đau dạ dày,Phát ban họng,Nôn mửa,Ho,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm dạ dày ruột,Nôn mửa,Mất nước,Tiêu chảy,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm dạ dày ruột,Nôn mửa,Mắt trũng sâu,Tiêu chảy,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm dạ dày ruột,Nôn mửa,Mắt trũng sâu,Mất nước,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm dạ dày ruột,Nôn mửa,Mắt trũng sâu,Mất nước,Tiêu chảy,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm dạ dày ruột,Mắt trũng sâu,Mất nước,Tiêu chảy,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Đau tim,Nôn mửa,Khó thở,Đổ mồ hôi,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Đau tim,Khó thở,Đổ mồ hôi,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Đau tim,Nôn mửa,Khó thở,Đổ mồ hôi,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Đau tim,Nôn mửa,Khó thở,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Đau tim,Nôn mửa,Đổ mồ hôi,Đau ngực,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Khó chịu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan A,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Tiêu chảy,Sốt nhẹ,Mắt vàng,Đau cơ,null,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Nước tiểu đậm màu,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Vàng da,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Vàng da,Nước tiểu đậm màu,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Vàng da,Nước tiểu đậm màu,Chán ăn,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Ngứa,Mệt mỏi,Uể oải,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,true
+Viêm gan B,Ngứa,Uể oải,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan B,Mệt mỏi,Uể oải,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Nước tiểu vàng,Mắt vàng,Khó chịu,Từng được truyền máu,Sử dụng kim tiêm không vệ sinh,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Vàng da,Chán ăn,Mắt vàng,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Vàng da,Khó chịu,Chán ăn,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Vàng da,Khó chịu,Chán ăn,Mắt vàng,Di truyển,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Vàng da,Khó chịu,Chán ăn,Mắt vàng,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Khó chịu,Chán ăn,Mắt vàng,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Vàng da,Khó chịu,Mắt vàng,Di truyển,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan C,Mệt mỏi,Vàng da,Khó chịu,Chán ăn,Mắt vàng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,null,null,null,null,null,null,null,null,null,true
+Viêm gan D,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Mắt vàng,null,null,null,null,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,true
+Viêm gan E,Đau khớp,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Sốt cao,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Đau khớp,Nôn mửa,Mệt mỏi,Sốt cao,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Viêm gan E,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Khó chịu,Chán ăn,Đau bụng,Mắt vàng,Mất chức năng gan,Hôn mê,Xuất huyết dạ dày,null,null,null,null,null,true
+Tăng huyết áp,Đau ngực,Chóng mặt,Mất thăng bằng,Mất tập trung,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Tăng huyết áp,Đau đầu,Đau ngực,Chóng mặt,Mất thăng bằng,Mất tập trung,null,null,null,null,null,null,null,null,null,null,null,null,true
+Tăng huyết áp,Đau đầu,Đau ngực,Mất thăng bằng,Mất tập trung,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Tăng huyết áp,Đau đầu,Đau ngực,Chóng mặt,Mất tập trung,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Tăng huyết áp,Đau đầu,Đau ngực,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Tăng huyết áp,Đau đầu,Chóng mặt,Mất thăng bằng,Mất tập trung,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Sụt cân,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Đổ mồ hôi,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Cường giáp,Mệt mỏi,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,true
+Cường giáp,Thay đổi tâm trạng,Sụt cân,Bồn chồn,Đổ mồ hôi,Tiêu chảy,Tim đập nhanh,Đói quá mức,Yếu cơ,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đổ mồ hôi,Đau đầu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Đổ mồ hôi,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Lo lắng,Đổ mồ hôi,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Mệt mỏi,Lo lắng,Đổ mồ hôi,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đổ mồ hôi,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đổ mồ hôi,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đổ mồ hôi,Đau đầu,Khó chịu,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đổ mồ hôi,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Hạ đường huyết,Nôn mửa,Mệt mỏi,Lo lắng,Đau đầu,Khó chịu,Mờ mắt,Đói quá mức,Khô và ngứa môi,Nói lắp,Kích động,Nhịp tim không đều,null,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tay chân lạnh,Thay đổi tâm trạng,Uể oải,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Thay đổi tâm trạng,Uể oải,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Tay chân lạnh,Thay đổi tâm trạng,Uể oải,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Tay chân lạnh,Uể oải,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Tay chân lạnh,Thay đổi tâm trạng,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Tay chân lạnh,Thay đổi tâm trạng,Uể oải,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,true
+Suy giáp,Tăng cân,Tay chân lạnh,Thay đổi tâm trạng,Uể oải,Chóng mặt,Mắt và mặt sưng,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Suy giáp,Mệt mỏi,Tăng cân,Tay chân lạnh,Thay đổi tâm trạng,Uể oải,Chóng mặt,Bướu cổ,Móng tay dễ gãy,Sưng khuỷu tứ chi,Trầm cảm,Kích động,Rối loạn kinh nguyệt,null,null,null,null,null,true
+Bệnh chốc,Phát ban,Sốt cao,Mụn nước,Mẫn đỏ quanh mũi,Chàm và rỉ nước,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh chốc,Sốt cao,Mụn nước,Mẫn đỏ quanh mũi,Chàm và rỉ nước,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh chốc,Phát ban,Mụn nước,Mẫn đỏ quanh mũi,Chàm và rỉ nước,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh chốc,Phát ban,Sốt cao,Mẫn đỏ quanh mũi,Chàm và rỉ nước,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh chốc,Phát ban,Sốt cao,Mụn nước,Chàm và rỉ nước,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Bệnh chốc,Phát ban,Sốt cao,Mụn nước,Mẫn đỏ quanh mũi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Sụt cân,Sốt cao,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sốt cao,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sụt cân,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Vàng da,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Vàng da,Nước tiểu đậm màu,null,null,null,null,null,null,null,null,null,null,true
+Vàng da,Ngứa,Mệt mỏi,Sụt cân,Sốt cao,Vàng da,Nước tiểu đậm màu,Đau bụng,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Sốt cao,Đổ mồ hôi,Đau đầu,Khó chịu,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Sốt cao,Đổ mồ hôi,Đau đầu,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Nôn mửa,Sốt cao,Đổ mồ hôi,Đau đầu,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Sốt cao,Đau đầu,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Sốt cao,Đổ mồ hôi,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Sốt cao,Đổ mồ hôi,Đau đầu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Sốt cao,Đổ mồ hôi,Đau đầu,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Sốt rét,Ớn lạnh,Nôn mửa,Đổ mồ hôi,Đau đầu,Khó chịu,Tiêu chảy,Đau cơ,null,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Kích động,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Trầm cảm,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Cứng cổ,Trầm cảm,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Đau nửa đầu,Tăng axit,Khó tiêu,Đau đầu,Mờ mắt,Đói quá mức,Cứng cổ,Kích động,Rối loạn tầm nhìn,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau cổ,Đau đầu gối,Đau khớp hông,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau cổ,Đau đầu gối,Đau khớp hông,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau đầu gối,Đau khớp hông,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau cổ,Đau khớp hông,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau cổ,Đau đầu gối,Xưng khớp,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau cổ,Đau đầu gối,Đau khớp hông,Đau khi đi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm xương khớp,Đau khớp,Đau cổ,Đau đầu gối,Đau khớp hông,Xưng khớp,null,null,null,null,null,null,null,null,null,null,null,null,true
+Xuất huyết não,Nôn mửa,Liệt nửa người,Tâm trạng thay đổi,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Xuất huyết não,Nôn mửa,Đau đầu,Tâm trạng thay đổi,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Xuất huyết não,Nôn mửa,Đau đầu,Liệt nửa người,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Xuất huyết não,Đau đầu,Liệt nửa người,Tâm trạng thay đổi,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Xuất huyết não,Nôn mửa,Đau đầu,Liệt nửa người,Tâm trạng thay đổi,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Đau đầu,Khó chịu,Chóng mặt,Mất thăng bằng,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Đau đầu,Khó chịu,Chóng mặt,Mất thăng bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Đau đầu,Khó chịu,Chóng mặt,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Đau đầu,Khó chịu,Chóng mặt,Mất thăng bằng,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Khó chịu,Chóng mặt,Mất thăng bằng,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Đau đầu,Chóng mặt,Mất thăng bằng,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Chóng mặt kịch phát,Nôn mửa,Đau đầu,Khó chịu,Mất thăng bằng,Mất cân bằng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Khó tiêu,Chán ăn,Đau bụng,Đầy hơi,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Khó tiêu,Chán ăn,Đau bụng,Đầy hơi,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Khó tiêu,Chán ăn,Đau bụng,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Khó tiêu,Chán ăn,Đầy hơi,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Khó tiêu,Chán ăn,Đau bụng,Đầy hơi,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Khó tiêu,Đau bụng,Đầy hơi,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,null,true
+Loét dạ dày tá tràng,Nôn mửa,Chán ăn,Đau bụng,Đầy hơi,Ngứa da,null,null,null,null,null,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Khó thở,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Khó thở,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Sốt cao,Khó thở,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Mệt mỏi,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Mệt mỏi,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Khó chịu,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Viêm phổi,Ớn lạnh,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Khó chịu,Đờm,Đau ngực,Tim đập nhanh,Đờm nâu,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Đau khớp,Bong tróc da,Móng có vết nứt nhỏ,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Bong tróc da,Nấm phấn trắng,Móng có vết nứt nhỏ,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Đau khớp,Bong tróc da,Nấm phấn trắng,Móng có vết nứt nhỏ,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Đau khớp,Bong tróc da,Nấm phấn trắng,Móng có vết nứt nhỏ,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Đau khớp,Bong tróc da,Nấm phấn trắng,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Đau khớp,Bong tróc da,Nấm phấn trắng,Móng có vết nứt nhỏ,null,null,null,null,null,null,null,null,null,null,null,null,true
+Vẩy nến,Phát ban,Đau khớp,Nấm phấn trắng,Móng có vết nứt nhỏ,Viêm quanh móng,null,null,null,null,null,null,null,null,null,null,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Sụt cân,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Sụt cân,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Nôn mửa,Mệt mỏi,Sụt cân,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Mệt mỏi,Sụt cân,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Sụt cân,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Ho,Sốt cao,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Sụt cân,Ho,Sốt cao,Khó thở,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Sụt cân,Ho,Sốt cao,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Lao,Ớn lạnh,Nôn mửa,Mệt mỏi,Sụt cân,Ho,Khó thở,Đổ mồ hôi,Chán ăn,Sốt nhẹ,Mắt vàng,Hạch bạch hầu,Khó chịu,Đờm,Đau ngực,Ho ra máu,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Đau bụng,Tiêu chảy,Sốt phát ban,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Đau bụng,Tiêu chảy,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Đau bụng,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Đau bụng,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Đau bụng,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Táo bón,Đau bụng,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Khó chịu,Táo bón,Đau bụng,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Đau bụng,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,true
+Bệnh thương hàn,Ớn lạnh,Nôn mửa,Mệt mỏi,Sốt cao,Đau đầu,Khó chịu,Táo bón,Tiêu chảy,Sốt phát ban,Đau bụng,null,null,null,null,null,null,null,true
+Nhiễm trùng tiết niệu,Tiểu buốt,Đau bàng quang,Nước tiểu có mùi hôi,Tiểu nhiều lần,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm trùng tiết niệu,Đau bàng quang,Nước tiểu có mùi hôi,Tiểu nhiều lần,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm trùng tiết niệu,Tiểu buốt,Nước tiểu có mùi hôi,Tiểu nhiều lần,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm trùng tiết niệu,Tiểu buốt,Đau bàng quang,Tiểu nhiều lần,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Nhiễm trùng tiết niệu,Tiểu buốt,Đau bàng quang,Nước tiểu có mùi hôi,null,null,null,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Bầm tím,Béo phì,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Béo phì,Phù nề chân,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Bầm tím,Béo phì,Phù nề chân,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Chuột rút,Bầm tím,Béo phì,Phù nề chân,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Bầm tím,Béo phì,Phù nề chân,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Bầm tím,Béo phì,Phù nề chân,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Bầm tím,Phù nề chân,Sưng tĩnh mạch,Nổi mạch máu,null,null,null,null,null,null,null,null,null,null,null,true
+Giản tĩnh mạch,Mệt mỏi,Chuột rút,Bầm tím,Béo phì,Phù nề chân,Sưng tĩnh mạch,null,null,null,null,null,null,null,null,null,null,null,true

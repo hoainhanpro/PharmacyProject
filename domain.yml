@@ -1,0 +1,68 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - bot_challenge
+  - ask_disease
+  - provide_symptom
+  - deny
+  - confirm
+  - ask_precaution
+
+responses:
+  utter_greet:
+  - text: "Chào bạn! Tôi có thể hỗ trợ gì cho bạn hôm nay?"
+  - text: "Xin chào! Hôm nay bạn cảm thấy thế nào?"
+  - text: "Hi! Tôi là trợ lý chẩn đoán sức khỏe của bạn. Tôi có thể giúp gì cho bạn?"
+  - text: "Chào mừng bạn đến với hệ thống trợ lý sức khỏe. Bạn cần hỗ trợ gì?"
+  - text: "Xin chào! Hãy cho tôi biết bạn đang gặp vấn đề gì để tôi có thể hỗ trợ bạn."
+
+  utter_goodbye:
+  - text: "Tạm biệt bạn! Chúc bạn luôn khỏe mạnh."
+  - text: "Chào tạm biệt! Nếu cần hỗ trợ thêm, đừng ngần ngại quay lại nhé."
+  - text: "Hẹn gặp lại bạn! Chúc bạn một ngày tốt lành."
+  - text: "Tạm biệt! Hãy giữ gìn sức khỏe nhé."
+  - text: "Tạm biệt! Hy vọng bạn sớm cảm thấy tốt hơn."
+
+  utter_iamabot:
+  - text: "Tôi là một chatbot hỗ trợ chẩn đoán sức khỏe. Tôi ở đây để giúp bạn."
+  - text: "Tôi là trợ lý sức khỏe tự động. Nếu có thắc mắc gì, hãy hỏi tôi nhé!"
+  - text: "Đúng vậy, tôi là chatbot! Nhiệm vụ của tôi là hỗ trợ bạn một cách tốt nhất."
+  - text: "Tôi là trợ lý sức khỏe AI. Tôi có thể cung cấp thông tin nhanh chóng và chính xác."
+  - text: "Tôi là một bot, nhưng tôi sẽ cố gắng hết sức để giúp bạn như một người bạn thực sự."
+
+  utter_no_disease_info:
+  - text: "Xin lỗi, tôi không thể tìm thấy thông tin về {disease} bạn đang tìm kiếm."
+
+entities:
+  - symptom
+  - disease
+
+slots:
+  symptom:
+    type: list
+    mappings:
+      - type: from_entity
+        entity: symptom
+    influence_conversation: true
+  symptoms:
+    type: list
+    initial_value: []
+    mappings:
+      - type: custom
+  disease:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: disease
+
+actions:
+  - action_add_symptom
+  - action_predict_disease
+  - action_provide_disease_info
+  - action_provide_disease_precaution
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
