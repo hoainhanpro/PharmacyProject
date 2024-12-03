@@ -39,7 +39,7 @@
             position: absolute;
             top: 0px;
             left: 150px;
-            width: 1100px;
+            width: 1070px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -56,8 +56,8 @@
         .username-box-border {
             position: absolute;
             top: 0px;
-            left: 1250px;
-            width: 238px;
+            left: 1220px;
+            width: 255px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -68,11 +68,12 @@
             text-align: center;
             line-height: 45px;
             font-size: 18px;
+            padding-left: 10px;
         }
 
         .username-box-border a.user-link {
             display: inline-block;
-            max-width: 150px;
+            max-width: 160px;
             /* Adjust the width as needed */
             white-space: nowrap;
             overflow: hidden;
@@ -82,7 +83,6 @@
 
         .username-box-border i {
             margin-right: 5px;
-            /* Add spacing between the icon and text */
         }
 
         /* Function Boxes Container */
@@ -98,20 +98,37 @@
         }
 
         .function-box {
-            width: 210px;
-            height: 100px;
+            width: 200px;
+            height: 50px;
             border-top: 2px solid black;
             border-left: 2px solid black;
             border-bottom: 2px solid black;
             border-right: 2px solid black;
             background-color: #0099FF;
             text-align: center;
-            line-height: 100px;
+            line-height: 50px;
             font-size: 16px;
             color: white;
             border-radius: 10px;
             flex-direction: column;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .functionFind-box{
+            width: 950px;
+            height: 50px;
+            border-top: 2px solid black;
+            border-left: 2px solid black;
+            border-bottom: 2px solid black;
+            border-right: 2px solid black;
+            background-color: white;
+            text-align: left;
+            line-height: 50px;
+            font-size: 16px;
+            color: #BBBBBB;
+            border-radius: 10px;
+            flex-direction: column;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding-left: 10px;
         }
 
         .function-box i {
@@ -130,14 +147,14 @@
             font-size: 24px;
             font-weight: bold;
             color: #FFFFFF;
-            margin-top: 200px;
+            margin-top: 150px;
             box-sizing: border-box;
         }
 
         /* Product Box Container */
         .product-box-container {
             position: absolute;
-            top: 360px;
+            top: 310px;
             left: 50px;
             width: calc(100% - 100px);
             display: flex;
@@ -212,7 +229,7 @@
             position: absolute;
             display: flex;
             left: 20px;
-            top: 230px;
+            top: 180px;
             justify-content: flex-start;
             gap: 10px;
         }
@@ -273,7 +290,7 @@
         {% if session.get('username') %}
         <!-- Display user's name if logged in -->
         <a href="#" class="user-link">
-            <i class="fa-regular fa-circle-user"> {{ session['username'] }}</i>
+            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['username'] }}</i>
         </a>
         {% else %}
         <!-- Display 'Guest' if not logged in -->
@@ -287,8 +304,13 @@
         <button class="function-box" onclick="window.location.href='{{ url_for('paid_orders.paid_orders') }}'">
             <i class="fas fa-clipboard"></i> Xem đơn
         </button>
-        <button class="function-box" onclick="https://www.example.com/tim-thuoc'">
-            <i class="fas fa-user-nurse"></i> Tư vấn
+
+        <div class="functionFind-box">
+            Nhập thông tin sản phẩm cần tìm
+        </div>
+
+        <button class="function-box">
+           Tìm kiếm
         </button>
     </div>
 
