@@ -57,7 +57,7 @@
             position: absolute;
             top: 0px;
             left: 1220px;
-            width: 255px;
+            width: 300px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -285,10 +285,10 @@
 
     <!-- HTML -->
     <div class="username-box-border">
+        {% if session.get('user') %}
         <a href="{{ url_for('cart.cart') }}">
             <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
         </a>
-        {% if session.get('user') %}
         <!-- Display user's name if logged in -->
         <a href="{{url_for('login.logout')}}" class="user-link">
             <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>

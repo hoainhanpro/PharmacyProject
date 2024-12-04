@@ -5,11 +5,10 @@ from datetime import datetime
 from services.database import create_connection
 from dotenv import load_dotenv
 
-load_dotenv()
-app = Flask(__name__)
-app.secret_key = os.urandom(24)
+# load_dotenv()
+# app = Flask(__name__)
+# app.secret_key = os.urandom(24)
 product_detail_bp = Blueprint('product_detail', __name__)
-
 
 @product_detail_bp.route('/product/<webName>')
 def product_detail(webName):

@@ -34,8 +34,8 @@ def execute_query(connection, query=None, procedure=None, params=None):
                 cursor.execute(query, params)
             else:
                 cursor.execute(query)
+            result = cursor.fetchall()
         connection.commit()
-        result = cursor.fetchall()
     except Error as e:
         print(f"The error '{e}' occurred")
     return result

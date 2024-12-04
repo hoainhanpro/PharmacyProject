@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Danh sách hóa đơn</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='receiptmanager.css') }}">
+</head>
+<body>
+    <h1>Danh sách Hóa đơn</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Mã hóa đơn</th>
+                <th>Tên khách hàng</th>
+                <th>Tổng tiền</th>
+                <th>Trạng thái</th>
+                <th>Trạng thái g</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Dữ liệu hóa đơn sẽ được chèn vào đây -->
+            {% for hoa_don in danh_sach_hoa_don %}
+            <tr>
+                <td>{{ hoa_don[0] }}</td>
+                <td>{{ hoa_don[5] }}</td>
+                <td>{{ hoa_don[2] }}</td>
+                <td>{{ hoa_don[3] }}</td>
+                <td>
+                    <a href="{{ url_for('receiptmanager.chi_tiet_hoa_don', idhd=hoa_don[0], idkh=hoa_don[1]) }}">Xem</a>
+                    <!-- Thêm các hành động khác nếu cần -->
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

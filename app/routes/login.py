@@ -12,14 +12,18 @@ def login():
 
         hash_password = hashlib.sha256(password.encode()).hexdigest()
         connection = create_connection()
-        res = execute_query(connection, procedure='LoginKhachHang', params=(username, hash_password))
+        res = execute_query(connection, procedure='LoginUser', params=(username, hash_password, password))
         if res and res[0][0] == 'Login failed':
             flash('Đăng nhập thất bại')
             return redirect(url_for('login.login'))
         
-        user = execute_query(connection, f'SELECT * FROM khachhang WHERE email = "{username}"')
+        user = execute_query(connection, f'SELECT * FROM {res[0][1]} WHERE email = "{username}"')
+        session['role'] = res[0][1]
         session['user'] = user[0]
-        return redirect(url_for('homepage.homepage'))
+        if session['role'] == 'khachhang':
+            return redirect(url_for('homepage.homepage'))
+        elif session['role'] == 'nhanvien':
+            return redirect(url_for('medicinemanager.medicinemanager'))
     return render_template('login.html')
 
 @login_bp.route('/logout')

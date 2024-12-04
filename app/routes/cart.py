@@ -2,8 +2,8 @@ from flask import Flask, render_template, redirect, session, url_for, Blueprint
 from services.database import create_connection
 from dotenv import load_dotenv
 
-load_dotenv()
-app = Flask(__name__)
+# load_dotenv()
+# app = Flask(__name__)
 cart_bp = Blueprint('cart', __name__)
 
 @cart_bp.route('/cart')
