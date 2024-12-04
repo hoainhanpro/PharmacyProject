@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, Blueprint
+from flask import Flask, render_template, redirect, session, url_for, Blueprint
 from services.database import create_connection
 from dotenv import load_dotenv
 
@@ -10,7 +10,7 @@ cart_bp = Blueprint('cart', __name__)
 def cart():
     connection = create_connection()
     cur = connection.cursor()
-    idkh = 1  
+    idkh = session['user'][0]
 
     query = """
         SELECT ct.idThuoc, t.webName, t.primaryImage, ct.soLuong, ct.giaTien, ct.idhd
@@ -50,7 +50,7 @@ def remove_from_cart(product_id):
     connection = create_connection()
     cur = connection.cursor()
 
-    idkh = 1 
+    idkh = session['user'][0]
     select_query = """
         SELECT id, soLuong
         FROM chitiethoadon
@@ -89,7 +89,7 @@ def remove_from_cart(product_id):
 def process_payment():
     connection = create_connection()
     cur = connection.cursor()
-    idkh = 1  
+    idkh = session['user'][0]
     select_total_query = """
         SELECT SUM(ct.soLuong * ct.giaTien)
         FROM chitiethoadon ct
@@ -125,8 +125,7 @@ def cancel_order():
     connection = create_connection()
     cur = connection.cursor()
 
-    idkh = 1 
-
+    idkh = session['user'][0]
     update_status_query = """
         UPDATE hoadon
         SET trangThai = 'da huy'

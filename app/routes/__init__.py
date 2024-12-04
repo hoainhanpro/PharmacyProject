@@ -1,6 +1,5 @@
 from .login import login_bp
 from .register import register_bp
-from .chatbot_demo import chatbot_bp
 from .cart import cart_bp
 from .homepage import homepage_bp
 from .medicinemanager import medicinemanager_bp

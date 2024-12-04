@@ -287,10 +287,10 @@
         <a href="{{ url_for('cart.cart') }}">
             <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
         </a>
-        {% if session.get('username') %}
+        {% if session.get('user') %}
         <!-- Display user's name if logged in -->
-        <a href="#" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['username'] }}</i>
+        <a href="{{url_for('login.logout')}}" class="user-link">
+            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
         </a>
         {% else %}
         <!-- Display 'Guest' if not logged in -->

@@ -17,6 +17,12 @@ def login():
             flash('Đăng nhập thất bại')
             return redirect(url_for('login.login'))
         
-        session['username'] = username
+        user = execute_query(connection, f'SELECT * FROM khachhang WHERE email = "{username}"')
+        session['user'] = user[0]
         return redirect(url_for('homepage.homepage'))
     return render_template('login.html')
+
+@login_bp.route('/logout')
+def logout():
+    session.pop('user', None)
+    return redirect(url_for('homepage.homepage'))
