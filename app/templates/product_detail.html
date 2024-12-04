@@ -57,8 +57,8 @@
         .username-box-border {
             position: absolute;
             top: 0px;
-            left: 1250px;
-            width: 238px;
+            left: 1220px;
+            width: 255px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -69,11 +69,12 @@
             text-align: center;
             line-height: 45px;
             font-size: 18px;
+            padding-left: 40px;
         }
 
         .username-box-border a.user-link {
             display: inline-block;
-            max-width: 150px;
+            max-width: 160px;
             /* Adjust the width as needed */
             white-space: nowrap;
             overflow: hidden;
@@ -83,8 +84,8 @@
 
         .username-box-border i {
             margin-right: 5px;
-            /* Add spacing between the icon and text */
         }
+
 
         .product-container {
             position: absolute;
@@ -290,10 +291,10 @@
         <a href="{{ url_for('cart.cart') }}">
             <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
         </a>
-        {% if session.get('username') %}
+        {% if session.get('user') %}
         <!-- Display user's name if logged in -->
-        <a href="#" class="user-link">
-            <i class="fa-regular fa-circle-user"> {{ session['username'] }}</i>
+        <a href="{{url_for('login.logout')}}" class="user-link">
+            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
         </a>
         {% else %}
         <!-- Display 'Guest' if not logged in -->
@@ -301,7 +302,7 @@
             <i class="fa-regular fa-circle-user"> Guest</i>
         </a>
         {% endif %}
-    </div>
+    </div>  
 
     <div class="product-container">
         <div class="image-box">

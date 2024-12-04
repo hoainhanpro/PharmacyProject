@@ -12,7 +12,7 @@ app.secret_key = os.urandom(24)
 
 @paid_orders_bp.route('/paid_orders')
 def paid_orders():
-    idkh = 1
+    idkh = session['user'][0]
     if not idkh:
         return redirect(url_for('login')) 
 

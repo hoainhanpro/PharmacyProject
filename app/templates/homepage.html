@@ -68,7 +68,8 @@
             text-align: center;
             line-height: 45px;
             font-size: 18px;
-            padding-left: 10px;
+            padding-left: 40px;
+            color: white
         }
 
         .username-box-border a.user-link {
@@ -295,7 +296,7 @@
         {% else %}
         <!-- Display 'Guest' if not logged in -->
         <a href="{{ url_for('login.login') }}" class="user-link">
-            <i class="fa-regular fa-circle-user"> Guest</i>
+            <i class="fa-regular fa-circle-user" style="color: white"> Guest</i>
         </a>
         {% endif %}
     </div>  

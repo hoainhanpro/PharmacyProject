@@ -54,20 +54,36 @@
         /* Username Box */
         .username-box-border {
             position: absolute;
-            top: 0px;     
-            left: 1250px;
-            width: 238px;
+            top: 0px;
+            left: 1220px;
+            width: 270px;
             height: 50px;
-            border-top: 2px solid black; 
-            border-left: none; 
-            border-bottom: 2px solid black; 
+            border-top: 2px solid black;
+            border-left: none;
+            border-bottom: 2px solid black;
             border-right: 2px solid black;
             background-color: #0099FF;
             margin: 0px auto;
             text-align: center;
             line-height: 45px;
             font-size: 18px;
+            padding-left: 60px; 
         }
+
+        .username-box-border a.user-link {
+            display: inline-block;
+            max-width: 160px;
+            /* Adjust the width as needed */
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            vertical-align: middle;
+        }
+
+        .username-box-border i {
+            margin-right: 5px;
+        }
+
 
         .paidOrder-container {
             position: absolute;
@@ -99,8 +115,18 @@
         <a href="{{ url_for('cart.cart') }}">
             <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
         </a>
-        <i class="fa-regular fa-circle-user"> Guest</i>
-    </div>
+        {% if session.get('user') %}
+        <!-- Display user's name if logged in -->
+        <a href="{{url_for('login.logout')}}" class="user-link">
+            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
+        </a>
+        {% else %}
+        <!-- Display 'Guest' if not logged in -->
+        <a href="{{ url_for('login.login') }}" class="user-link">
+            <i class="fa-regular fa-circle-user"> Guest</i>
+        </a>
+        {% endif %}
+    </div>  
 
     <div class="paidOrder-container">
         <div class="container">

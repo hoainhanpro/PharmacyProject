@@ -48,7 +48,7 @@ def add_to_cart():
         if not product:
             return redirect(url_for('homepage'))
         
-        idkh = 1
+        idkh = session['user'][0]
         product_id = product[0]
         price = float(product[15])
         cur.execute("SELECT id FROM hoadon WHERE idkh = %s AND trangThai = 'chua thanh toan'", (idkh,))
