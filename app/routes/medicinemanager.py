@@ -30,37 +30,23 @@ def medicinemanager():
         
         if action == 'add':
             try:
-                # Thêm thuốc vào database
-                cur.callproc('AddThuoc', (
-                    request.form['id'],
-                    request.form['headingText'],
-                    request.form['dosage'],
-                    request.form['ageUse'],
-                    request.form['shortName'],
-                    request.form['shortDescription'],
-                    request.form['preservation'],
-                    request.form['adverseEffect'],
-                    request.form['producer'],
-                    request.form['tusage'],
-                    request.form['tname'],
-                    request.form['ingredient'],
-                    request.form['primaryImage'],
-                    request.form['careful'],
-                    request.form['webName'],
-                    request.form['prices'],
-                    request.form['specification'],
-                    request.form['warning'],
-                    request.form['brand'],
-                    request.form['brandOrigin'],
-                    request.form['quantity']
-                ))
+                # Kiểm tra mã thuốc đã tồn tại
+                medicine_id = request.form['id']
+                cur.execute("SELECT * FROM thuoc WHERE id = %s", (medicine_id,))
+                existing_medicine = cur.fetchone()
+                
+                if existing_medicine:
+                    flash('Mã thuốc đã tồn tại!', 'error')
+                    return redirect(url_for('medicinemanager.medicinemanager'))
+                
                 connection.commit()
-                print("Thêm thuốc thành công")  # Debug
                 flash('Thêm thuốc thành công!', 'success')
+                
             except Exception as e:
-                print(f"Lỗi khi thêm thuốc: {str(e)}")  # Debug
                 connection.rollback()
                 flash(f'Lỗi khi thêm thuốc: {str(e)}', 'error')
+            
+            return redirect(url_for('medicinemanager.medicinemanager'))
         
         elif action == 'delete':
             try:

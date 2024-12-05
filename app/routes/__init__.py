@@ -7,3 +7,4 @@ from .paid_orders import paid_orders_bp
 from .product_detail import product_detail_bp
 from .receiptmanager import receiptmanager_bp
 from .datasetmanager import datasetmanager_bp
+from .employeemanager import employeemanager_bp
