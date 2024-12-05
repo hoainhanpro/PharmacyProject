@@ -180,12 +180,15 @@
                     <i class="fas fa-pills"></i>
                     Quản lý thuốc
                 </a>
+                <span class="navbar-text">
+                    <a href="{{ url_for('login.logout') }}" class="nav-link">Welcome, {{ session['user'][1] }}</a>
+                </span>
                 <div class="nav-links">
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-home"></i> Trang chủ
+                    <a href="{{url_for('medicinemanager.medicinemanager')}}" class="nav-link">
+                        <i class="fas fa-pills"></i> Trang chủ
                     </a>
-                    <a href="#" class="nav-link">
-                        <i class="fas fa-box"></i> Kho thuốc
+                    <a href="{{url_for('datasetmanager.datasetmanager')}}" class="nav-link">
+                        <i class="fas fa-table"></i> Dataset
                     </a>
                     <button class="btn add-medicine-btn" data-bs-toggle="modal" data-bs-target="#addMedicineModal">
                         <i class="fas fa-plus"></i>Thêm thuốc mới

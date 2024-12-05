@@ -17,13 +17,18 @@ def login():
             flash('Đăng nhập thất bại')
             return redirect(url_for('login.login'))
         
-        user = execute_query(connection, f'SELECT * FROM {res[0][1]} WHERE email = "{username}"')
+        if res[0][1] == 'khachhang':
+            user = execute_query(connection, f'SELECT * FROM khachhang WHERE email = "{username}"')
+        else:
+            user = execute_query(connection, f'SELECT * FROM nhanvien WHERE email = "{username}"')
         session['role'] = res[0][1]
         session['user'] = user[0]
         if session['role'] == 'khachhang':
             return redirect(url_for('homepage.homepage'))
-        elif session['role'] == 'nhanvien':
+        elif session['role'] == 'QUANLY':
             return redirect(url_for('medicinemanager.medicinemanager'))
+        elif session['role'] == 'NHANVIENGIAOHANG':
+            return redirect(url_for('receiptmanager.danh_sach_hoa_don'))
     return render_template('login.html')
 
 @login_bp.route('/logout')
