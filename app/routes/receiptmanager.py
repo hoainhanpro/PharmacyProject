@@ -6,6 +6,7 @@ receiptmanager_bp = Blueprint('receiptmanager', __name__)
 @receiptmanager_bp.route('/danh_sach_hoa_don')
 def danh_sach_hoa_don():
     connection = create_connection()
+    
     query = '''
         SELECT hoadon.*, KhachHang.ho_va_ten
         FROM hoadon
@@ -13,7 +14,7 @@ def danh_sach_hoa_don():
         WHERE hoadon.trangThai = 'da thanh toan'
     '''
     danh_sach_hoa_don = execute_query(connection, query)
-
+    print(danh_sach_hoa_don)
     return render_template('receiptmanager.html', danh_sach_hoa_don=danh_sach_hoa_don)
 
 @receiptmanager_bp.route('/chi_tiet_hoa_don/<int:idhd>/<int:idkh>')
