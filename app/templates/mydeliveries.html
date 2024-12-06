@@ -111,17 +111,11 @@
                     <a href="{{ url_for('login.logout') }}" class="nav-link">Welcome, {{ session['user'][1] }}</a>
                 </span>
                 <div class="nav-links">
-                    <a href="{{url_for('medicinemanager.medicinemanager')}}" class="nav-link">
-                        <i class="fas fa-pills"></i> Trang chủ
+                    <a href="{{url_for('deliver.mydeliveries')}}" class="nav-link">
+                        <i class="fas fa-file-invoice"></i> Hóa đơn của tôi
                     </a>
-                    <a href="{{url_for('employeemanager.employeemanager')}}" class="nav-link">
-                        <i class="fas fa-users"></i> Nhân viên
-                    </a>
-                    <a href="{{url_for('receiptmanager.danh_sach_hoa_don')}}" class="nav-link">
-                        <i class="fas fa-file-invoice"></i> Hóa đơn
-                    </a>
-                    <a href="{{url_for('datasetmanager.datasetmanager')}}" class="nav-link">
-                        <i class="fas fa-table"></i> Dataset
+                    <a href="{{url_for('deliver.deliverlisting')}}" class="nav-link">
+                        <i class="fas fa-file-invoice"></i> Hóa đơn cần giao
                     </a>
                 </div>
             </div>
@@ -147,15 +141,18 @@
                     <td>{{ hoa_don[4] }}</td>
                     <td>{{ "{:,.0f}".format(hoa_don[2]) }}đ</td>
                     <td>{{ "Đã thanh toán" if hoa_don[3] == "da thanh toan" else "Chưa thanh toán" }}</td>
-                    <td>{{ "Đã giao" if hoa_don[8] != None else "Chưa giao hàng" }}</td>
+                    <td>{{ hoa_don[7] if hoa_don[7] != None else 'Chưa giao' }}</td>
                     <td>
-                        <a data-bs-toggle="modal"
-                        data-bs-target="#viewReceiptModal" data-id="{{ hoa_don[0] }}"
-                        data-tenkh="{{ hoa_don[4] }}" data-sdt="{{ hoa_don[5] }}" 
-                        data-diachi="{{ hoa_don[6] }}" data-idkh="{{hoa_don[1]}}"
-                        class="action-link">
+                        <a data-bs-toggle="modal" data-bs-target="#viewReceiptModal" data-id="{{ hoa_don[0] }}"
+                            data-tenkh="{{ hoa_don[4] }}" data-sdt="{{ hoa_don[5] }}" data-diachi="{{ hoa_don[6] }}"
+                            data-idkh="{{hoa_don[1]}}" class="action-link">
                             <i class="fas fa-eye"></i> Xem
                         </a>
+                        {% if hoa_don[7] == None %}
+                        <button class="action-link" id="pressmetocomplete" data-id="{{hoa_don[0]}}">
+                            <i class="fas fa-truck"></i> Hoàn thành
+                        </button>
+                        {% endif %}
                     </td>
                 </tr>
                 {% endfor %}
@@ -203,6 +200,25 @@
         </div>
     </div>
     <script>
+        var pressmetocomplete = document.getElementById('pressmetocomplete');
+        if (pressmetocomplete) {
+            pressmetocomplete.addEventListener('click', function (event) {
+                var button = event.target;
+                var receiptId = button.getAttribute('data-id');
+                fetch('/hoan_thanh/' + receiptId, {
+                    method: 'POST'
+                }
+                ).then(response => response.json()).then(
+                    data => {
+                        if (data.success) {
+                            alert('Hoàn thành hóa đơn thành công');
+                            location.reload();
+                        } else {
+                            alert('Có lỗi xảy ra, vui lòng thử lại sau');
+                        }
+                    });
+            });
+        }
         var viewReceiptModal = document.getElementById('viewReceiptModal');
         viewReceiptModal.addEventListener('show.bs.modal', function (event) {
             var button = event.relatedTarget;
@@ -230,8 +246,7 @@
                     document.getElementById('customerAddress').innerText = customerPhone;
                     document.getElementById('delivererName').innerText = data[0][5];
                     document.getElementById('dateDeliver').innerText = data[0][6];
-
-                    const config = { style: 'currency', currency: 'VND', maximumFractionDigits: 9}
+                    const config = { style: 'currency', currency: 'VND', maximumFractionDigits: 9 }
                     // Iterate over data and create table rows
                     data.forEach(item => {
                         var row = document.createElement('tr');

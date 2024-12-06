@@ -9,3 +9,4 @@ from .receiptmanager import receiptmanager_bp
 from .datasetmanager import datasetmanager_bp
 from .employeemanager import employeemanager_bp
 from .userinfo import userinfo_bp
+from .deliver import deliver_bp

@@ -210,14 +210,14 @@
                     <a href="{{url_for('medicinemanager.medicinemanager')}}" class="nav-link">
                         <i class="fas fa-pills"></i> Trang chủ
                     </a>
-                    <a href="{{url_for('datasetmanager.datasetmanager')}}" class="nav-link">
-                        <i class="fas fa-table"></i> Dataset
-                    </a>
                     <a href="{{url_for('employeemanager.employeemanager')}}" class="nav-link">
-                        <i class="fas fa-users"></i> Quản lý nhân viên
+                        <i class="fas fa-users"></i> Nhân viên
                     </a>
                     <a href="{{url_for('receiptmanager.danh_sach_hoa_don')}}" class="nav-link">
                         <i class="fas fa-file-invoice"></i> Hóa đơn
+                    </a>
+                    <a href="{{url_for('datasetmanager.datasetmanager')}}" class="nav-link">
+                        <i class="fas fa-table"></i> Dataset
                     </a>
                     <button class="btn add-employee-btn" data-bs-toggle="modal" data-bs-target="#addEmployeeModal">
                         <i class="fas fa-plus"></i>Thêm nhân viên mới
@@ -317,10 +317,6 @@
                 <div class="modal-body">
                     <form method="POST" action="{{ url_for('employeemanager.employeemanager') }}">
                         <input type="hidden" name="action" value="add">
-                        <div class="mb-3">
-                            <label class="form-label">ID</label>
-                            <input type="text" class="form-control" name="id" required>
-                        </div>
                         <div class="mb-3">
                             <label class="form-label">Họ và Tên</label>
                             <input type="text" class="form-control" name="ho_va_ten" required>

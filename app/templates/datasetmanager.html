@@ -119,8 +119,17 @@
                     <a href="{{url_for('medicinemanager.medicinemanager')}}" class="nav-link">
                         <i class="fas fa-pills"></i> Trang chủ
                     </a>
+                    <a href="{{url_for('employeemanager.employeemanager')}}" class="nav-link">
+                        <i class="fas fa-users"></i> Nhân viên
+                    </a>
+                    <a href="{{url_for('receiptmanager.danh_sach_hoa_don')}}" class="nav-link">
+                        <i class="fas fa-file-invoice"></i> Hóa đơn
+                    </a>
+                    <a href="{{url_for('datasetmanager.datasetmanager')}}" class="nav-link">
+                        <i class="fas fa-table"></i> Dataset
+                    </a>
                     <button class="btn add-dataset-btn" data-bs-toggle="modal" data-bs-target="#addDatasetModal">
-                        <i class="fas fa-plus"></i> Add Dataset
+                        <i class="fas fa-plus"></i> Thêm dataset
                     </button>
                     <a class="btn add-dataset-btn" href="{{url_for('datasetmanager.train')}}">
                         <i class="fas fa-repeat"></i> Train dataset

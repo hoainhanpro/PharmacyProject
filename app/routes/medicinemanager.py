@@ -30,16 +30,28 @@ def medicinemanager():
         
         if action == 'add':
             try:
-                # Kiểm tra mã thuốc đã tồn tại
-                medicine_id = request.form['id']
-                cur.execute("SELECT * FROM thuoc WHERE id = %s", (medicine_id,))
-                existing_medicine = cur.fetchone()
-                
-                if existing_medicine:
-                    flash('Mã thuốc đã tồn tại!', 'error')
-                    return redirect(url_for('medicinemanager.medicinemanager'))
-                
-                connection.commit()
+                execute_query(connection=create_connection(),procedure='AddThuoc', params=(
+                    request.form['headingText'],
+                    request.form['dosage'],
+                    request.form['ageUse'],
+                    request.form['shortName'],
+                    request.form['shortDescription'],
+                    request.form['preservation'],
+                    request.form['adverseEffect'],
+                    request.form['producer'],
+                    request.form['tusage'],
+                    request.form['tname'],
+                    request.form['ingredient'],
+                    request.form['primaryImage'],
+                    request.form['careful'],
+                    request.form['webName'],
+                    request.form['prices'],
+                    request.form['specification'],
+                    request.form['warning'],
+                    request.form['brand'],
+                    request.form['brandOrigin'],
+                    request.form['quantity']
+                ))
                 flash('Thêm thuốc thành công!', 'success')
                 
             except Exception as e:

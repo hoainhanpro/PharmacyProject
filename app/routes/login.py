@@ -28,10 +28,11 @@ def login():
         elif session['role'] == 'QUANLY':
             return redirect(url_for('medicinemanager.medicinemanager'))
         elif session['role'] == 'NHANVIENGIAOHANG':
-            return redirect(url_for('receiptmanager.danh_sach_hoa_don'))
+            return redirect(url_for('deliver.deliverlisting'))
     return render_template('login.html')
 
 @login_bp.route('/logout')
 def logout():
     session.pop('user', None)
+    session.pop('role', None)
     return redirect(url_for('homepage.homepage'))
