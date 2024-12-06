@@ -22,12 +22,13 @@ def homepage():
     group = request.args.get("group", "") 
     type_ = request.args.get("type", "")  
     category = request.args.get("category", "") 
+    search = request.args.get("search", "").lower() 
     page = int(request.args.get("page", 1)) 
 
     query = "SELECT webName, prices, primaryImage, ageUse FROM thuoc"
 
     filters = []
-    
+
     if group == "over18":
         filters.append("ageUse IN ('Trên 18 tuổi', 'Trên 12 tuổi', 'Trên 8 tuổi', 'Trên 4 tuổi')")
     elif group == "over12":
@@ -36,28 +37,29 @@ def homepage():
         filters.append("ageUse IN ('Trên 8 tuổi', 'Trên 4 tuổi')")
     elif group == "over4":
         filters.append("ageUse = 'Trên 4 tuổi'")
-  
+    
+    if search:
+        filters.append(f"LOWER(webName) LIKE '%{search}%'")
+
     if filters:
         query += " WHERE " + " AND ".join(filters)
 
     cur = connection.cursor()
     cur.execute(query)  
-    total_products = len(cur.fetchall())  
+    total_products = len(cur.fetchall()) 
     total_pages = math.ceil(total_products / PRODUCTS_PER_PAGE) 
 
-
     start = (page - 1) * PRODUCTS_PER_PAGE
-    end = start + PRODUCTS_PER_PAGE
-
-  
     query += f" LIMIT {start}, {PRODUCTS_PER_PAGE}"
 
     cur.execute(query) 
     products = cur.fetchall()
-
+    has_products = len(products) > 0
     cur.close()
     connection.close()  
 
+    
+    
     return render_template(
         "homepage.html", 
         products=products, 
@@ -65,6 +67,7 @@ def homepage():
         page=page,
         group=group,
         type=type_,
-        category=category
+        category=category,
+        search=search, 
+        has_products=has_products
     )
-

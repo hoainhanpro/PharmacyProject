@@ -5,9 +5,6 @@ from datetime import datetime
 from services.database import create_connection
 from dotenv import load_dotenv
 
-# load_dotenv()
-# app = Flask(__name__)
-# app.secret_key = os.urandom(24)
 product_detail_bp = Blueprint('product_detail', __name__)
 
 @product_detail_bp.route('/product/<webName>')
@@ -78,7 +75,7 @@ def add_to_cart():
 
         cur.close()
         connection.close()
-        flash("Đã thêm sản phẩm vào giỏ hàng thành công!", "success")
+        flash("Đã thêm sản phẩm vào giỏ hàng!", "success")
         return redirect(url_for('product_detail.product_detail', webName=webName))
 
     except Exception as e:
