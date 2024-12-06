@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #DDDDDD;
+            background-color: white;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -56,7 +56,7 @@
             position: absolute;
             top: 0px;
             left: 1220px;
-            width: 300px;
+            width: 270px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -73,7 +73,6 @@
         .username-box-border a.user-link {
             display: inline-block;
             max-width: 160px;
-            /* Adjust the width as needed */
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -84,6 +83,40 @@
             margin-right: 5px;
         }
 
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 50px;
+            right: 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .dropdown-item {
+            color: black;
+            padding: 0px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        .show-dropdown {
+            display: block;
+        }
+
+        .dropdown-content hr {
+            margin: 0px 0; 
+            border: 0; 
+            border-top: 1px solid #ddd; 
+        }
 
         .paidOrderDetail-container {
             position: absolute;
@@ -103,29 +136,36 @@
 
     <div class="menu-box-border">
         <a href="http://127.0.0.1:5000/" style="text-decoration: none; color: white;">
-            Trang chủ
+            <i class="fa-solid fa-house"></i> <span style="text-transform: none;">Trang chủ</span>
         </a>
     </div>
  
     <div class="find-box-border">
 
     </div>
+
     <div class="username-box-border">
         {% if session.get('user') %}
-        <a href="{{ url_for('cart.cart') }}">
-            <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
-        </a>
-        <!-- Display user's name if logged in -->
-        <a href="{{url_for('login.logout')}}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
-        </a>
+          
+            <a href="{{ url_for('cart.cart') }}">
+                <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
+            </a>
+            
+            <a href="#" class="user-link" id="user-dropdown-toggle">
+                <i class="fa-regular fa-circle-user" style="color: white;"> {{ session['user'][3].lower() }}</i>
+            </a>
+
+            <div id="user-dropdown" class="dropdown-menu">
+                <a href="{{ url_for('userinfo.user_info') }}" class="dropdown-item">Chỉnh sửa thông tin người dùng</a>
+                <hr>
+                <a href="{{ url_for('login.logout') }}" class="dropdown-item">Đăng xuất</a>
+            </div>
         {% else %}
-        <!-- Display 'Guest' if not logged in -->
-        <a href="{{ url_for('login.login') }}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> Guest</i>
-        </a>
+            <a href="{{ url_for('login.login') }}" class="user-link">
+                <i class="fa-regular fa-circle-user" style="color: white;"> Guest</i>
+            </a>
         {% endif %}
-    </div>  
+    </div>
 
     <div class="paidOrderDetail-container">
         <div class="container">
@@ -158,5 +198,21 @@
             {% endif %}
         </div>
     </div>
+    <script> 
+        document.getElementById('user-dropdown-toggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('user-dropdown');
+            dropdown.classList.toggle('show-dropdown');
+        });
+        
+        document.addEventListener('click', function(event) {
+            var dropdown = document.getElementById('user-dropdown');
+            var userLink = document.getElementById('user-dropdown-toggle');
+            
+            if (!userLink.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('show-dropdown');
+            }
+        });
+    </script>
 </body>
 </html>

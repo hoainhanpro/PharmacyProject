@@ -58,7 +58,7 @@
             position: absolute;
             top: 0px;
             left: 1220px;
-            width: 300px;
+            width: 255px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -75,7 +75,6 @@
         .username-box-border a.user-link {
             display: inline-block;
             max-width: 160px;
-            /* Adjust the width as needed */
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -85,7 +84,41 @@
         .username-box-border i {
             margin-right: 5px;
         }
+        
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 50px; 
+            right: 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .dropdown-item {
+            color: black;
+            padding: 0px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        .show-dropdown {
+            display: block;
+        }
 
+        .dropdown-content hr {
+            margin: 0px 0; 
+            border: 0; 
+            border-top: 1px solid #ddd; 
+        }
 
         .product-container {
             position: absolute;
@@ -212,55 +245,29 @@
             line-height: 1.5;
         }
 
-        .order-btn-container {
-            margin-top: 20px;
-            text-align: center;
-
-        }
-
-        .order-btn {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #FF5733;
+        .order-btn-container button {
+            padding: 12px 25px;
+            font-size: 15px;
+            background-color: #28a745; /* Màu xanh lá */
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 8px;
             cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s; 
+            width: 20%; 
+            margin-top: 10px;
+        }
+    
+        .order-btn-container button:hover {
+            background-color: #218838; 
+        }
+    
+        .order-btn-container button:focus {
+            outline: none; 
         }
 
-        .order-btn:hover {
-            background-color: #C74624;
-        }
-
-        .alert-container {
-            position: fixed;
-            top: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            z-index: 1050;
-            width: 90%;
-            max-width: 500px;
-            display: none;
-        }
-
-        .alert {
-            padding: 15px;
-            margin-bottom: 10px;
-            border: 1px solid transparent;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-
-        .alert-success {
-            color: #155724;
-            background-color: #d4edda;
-            border-color: #c3e6cb;
-        }
-
-        .alert-danger {
-            color: #721c24;
-            background-color: #f8d7da;
-            border-color: #f5c6cb;
+        .order-btn-container button:active {
+            background-color: #1e7e34;
         }
     </style>
 
@@ -268,19 +275,21 @@
 
 <body>
     {% with messages = get_flashed_messages(with_categories=true) %}
-    {% if messages %}
-    {% for category, message in messages %}
-    <div class="alert alert-{{ category }}" role="alert">
-        {{ message }}
-    </div>
-    {% endfor %}
-    {% endif %}
+        {% if messages %}
+            <div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1000; width: 300px;">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}" role="alert">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
     {% endwith %}
 
     <!-- Menu Box -->
     <div class="menu-box-border">
         <a href="http://127.0.0.1:5000/" style="text-decoration: none; color: white;">
-            Trang chủ
+            <i class="fa-solid fa-house"></i> <span style="text-transform: none;">Trang chủ</span>
         </a>
     </div>
 
@@ -289,18 +298,24 @@
 
     <div class="username-box-border">
         {% if session.get('user') %}
-        <a href="{{ url_for('cart.cart') }}">
-            <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
-        </a>
-        <!-- Display user's name if logged in -->
-        <a href="{{url_for('login.logout')}}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
-        </a>
+          
+            <a href="{{ url_for('cart.cart') }}">
+                <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
+            </a>
+            
+            <a href="#" class="user-link" id="user-dropdown-toggle">
+                <i class="fa-regular fa-circle-user" style="color: white;"> {{ session['user'][3].lower() }}</i>
+            </a>
+
+            <div id="user-dropdown" class="dropdown-menu">
+                <a href="{{ url_for('userinfo.user_info') }}" class="dropdown-item">Chỉnh sửa thông tin người dùng</a>
+                <hr>
+                <a href="{{ url_for('login.logout') }}" class="dropdown-item">Đăng xuất</a>
+            </div>
         {% else %}
-        <!-- Display 'Guest' if not logged in -->
-        <a href="{{ url_for('login.login') }}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> Guest</i>
-        </a>
+            <a href="{{ url_for('login.login') }}" class="user-link">
+                <i class="fa-regular fa-circle-user" style="color: white;"> Guest</i>
+            </a>
         {% endif %}
     </div>
 
@@ -340,7 +355,9 @@
                 <input type="hidden" name="webName" value="{{ product[14] }}">
                 <label for="quantity">Số lượng:</label>
                 <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
-                <button type="submit">Đặt hàng</button>
+                <div class="order-btn-container">
+                    <button type="submit">Thêm vào giỏ</button>
+                </div>
             </form>
 
         </div>

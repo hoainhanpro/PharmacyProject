@@ -9,7 +9,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #DDDDDD;
+            background-color: white;
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
@@ -57,7 +57,7 @@
             position: absolute;
             top: 0px;
             left: 1220px;
-            width: 300px;
+            width: 250px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -75,7 +75,6 @@
         .username-box-border a.user-link {
             display: inline-block;
             max-width: 160px;
-            /* Adjust the width as needed */
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -84,6 +83,41 @@
 
         .username-box-border i {
             margin-right: 5px;
+        }
+
+        .dropdown-menu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            top: 50px;
+            right: 0;
+            padding: 5px;
+            border-radius: 5px;
+        }
+        
+        .dropdown-item {
+            color: black;
+            padding: 0px 20px;
+            text-decoration: none;
+            display: block;
+        }
+        
+        .dropdown-item:hover {
+            background-color: #DDDDDD;
+            cursor: pointer;
+        }
+        
+        .show-dropdown {
+            display: block;
+        }
+
+        .dropdown-content hr {
+            margin: 0px 0; 
+            border: 0; 
+            border-top: 1px solid #ddd; 
         }
 
         /* Function Boxes Container */
@@ -97,6 +131,8 @@
             align-items: center;
             gap: 40px;
         }
+
+        
 
         .function-box {
             width: 200px;
@@ -114,6 +150,12 @@
             flex-direction: column;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
+
+        .function-box:hover {
+            background-color: #007BFF; 
+            color: white; 
+        }
+
         .functionFind-box{
             width: 950px;
             height: 50px;
@@ -125,11 +167,15 @@
             text-align: left;
             line-height: 50px;
             font-size: 16px;
-            color: #BBBBBB;
+            color: black;
             border-radius: 10px;
             flex-direction: column;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             padding-left: 10px;
+        }
+
+        .functionFind-box::placeholder {
+            color:#DDDDDD ; 
         }
 
         .function-box i {
@@ -137,25 +183,10 @@
             margin-bottom: 10px;
         }
 
-        /* Sản phẩm tiêu đề */
-        .product-title {
-            width: 100%;
-            height: 50px;
-            background-color: #3399FF;
-            border: 2px solid black;
-            text-align: center;
-            line-height: 50px;
-            font-size: 24px;
-            font-weight: bold;
-            color: #FFFFFF;
-            margin-top: 150px;
-            box-sizing: border-box;
-        }
-
         /* Product Box Container */
         .product-box-container {
             position: absolute;
-            top: 310px;
+            top: 210px;
             left: 50px;
             width: calc(100% - 100px);
             display: flex;
@@ -172,7 +203,7 @@
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px;
-            background-color: #f2f2f2;
+            background-color: white;
             margin-bottom: 20px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -230,7 +261,7 @@
             position: absolute;
             display: flex;
             left: 20px;
-            top: 180px;
+            top: 100px;
             justify-content: flex-start;
             gap: 10px;
         }
@@ -256,6 +287,7 @@
             text-decoration: none;
             font-size: 16px;
             color: black;
+            background-color: #f9f9f9;
         }
 
         .pagination a:hover {
@@ -268,6 +300,26 @@
             text-decoration: underline;
             color: #007BFF;
         }
+
+        .no-products-message {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 250px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 18px;
+            color: red;
+            text-align: center;
+            margin: 0;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #007BFF; 
+            color: white; 
+        }
+
     </style>
     <link rel="stylesheet" href="{{ url_for('static', filename='chatbot.css') }}">
 </head>
@@ -276,7 +328,7 @@
 
     <div class="menu-box-border">
         <a href="http://127.0.0.1:5000/" style="text-decoration: none; color: white;">
-            Trang chủ
+            <i class="fa-solid fa-house"></i> <span style="text-transform: none;">Trang chủ</span>
         </a>
     </div>
 
@@ -286,37 +338,36 @@
     <!-- HTML -->
     <div class="username-box-border">
         {% if session.get('user') %}
-        <a href="{{ url_for('cart.cart') }}">
-            <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
-        </a>
-        <!-- Display user's name if logged in -->
-        <a href="{{url_for('login.logout')}}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> {{ session['user'][3].lower() }}</i>
-        </a>
+          
+            <a href="{{ url_for('cart.cart') }}">
+                <i class="fa-solid fa-cart-shopping" style="color: orange;"></i>
+            </a>
+            
+            <a href="#" class="user-link" id="user-dropdown-toggle">
+                <i class="fa-regular fa-circle-user" style="color: white;"> {{ session['user'][3].lower() }}</i>
+            </a>
+
+            <div id="user-dropdown" class="dropdown-menu">
+                <a href="{{ url_for('userinfo.user_info') }}" class="dropdown-item">Chỉnh sửa thông tin người dùng</a>
+                <hr>
+                <a href="{{ url_for('login.logout') }}" class="dropdown-item">Đăng xuất</a>
+            </div>
         {% else %}
-        <!-- Display 'Guest' if not logged in -->
-        <a href="{{ url_for('login.login') }}" class="user-link">
-            <i class="fa-regular fa-circle-user" style="color: white"> Guest</i>
-        </a>
+            <a href="{{ url_for('login.login') }}" class="user-link">
+                <i class="fa-regular fa-circle-user" style="color: white;"> Guest</i>
+            </a>
         {% endif %}
-    </div>  
+    </div>
 
     <div class="function-box-container">
         <button class="function-box" onclick="window.location.href='{{ url_for('paid_orders.paid_orders') }}'">
             <i class="fas fa-clipboard"></i> Xem đơn
         </button>
 
-        <div class="functionFind-box">
-            Nhập thông tin sản phẩm cần tìm
-        </div>
-
-        <button class="function-box">
-           Tìm kiếm
-        </button>
-    </div>
-
-    <div class="product-title">
-        Hãy xem các sản phẩm của chúng tôi
+        <form method="GET" action="{{ url_for('homepage.homepage') }}" style="display: flex; align-items: center;">
+            <input type="text" class="functionFind-box" name="search" placeholder="Nhập thông tin sản phẩm cần tìm" value="{{ request.args.get('search', '') }}" required>
+            <button class="function-box" type="submit" style="margin-left: 30px; ">Tìm kiếm</button>
+        </form>
     </div>
 
     <div class="container mt-5">
@@ -336,19 +387,24 @@
     </div>
 
 
-    <div class="product-box-container">
+    <div class="product-box-container" {% if not has_products %}style="display: none;"{% endif %}>
         {% for product in products %}
         <div class="product-box">
             <img src="{{ product[2] }}" alt="{{ product[0] }}">
             <h5>{{ product[0] }}</h5>
             <p>{{ product[1] }} VND</p>
-            <button class="order-button" onclick="window.location.href='/product/{{ product[0] }}'">Xem sản
-                phẩm</button>
+            <button class="order-button" onclick="window.location.href='/product/{{ product[0] }}'">Xem sản phẩm</button>
         </div>
         {% endfor %}
     </div>
+    
+    {% if not has_products %}
+        <div class="no-products-message">
+            <p>Không tìm thấy sản phẩm phù hợp với từ khóa "{{ search }}"</p>
+        </div>
+    {% endif %}
 
-    <div class="pagination-container">
+    <div class="pagination-container" {% if not has_products %}style="display: none;"{% endif %}>
         <div class="pagination">
             {% for i in range(1, total_pages + 1) %}
             {% if i == page %}
@@ -373,6 +429,22 @@
         </div>
     </div>
     <script src="{{ url_for('static', filename='chatbot.js') }}"></script>
+    <script> 
+        document.getElementById('user-dropdown-toggle').addEventListener('click', function(event) {
+            event.preventDefault();
+            var dropdown = document.getElementById('user-dropdown');
+            dropdown.classList.toggle('show-dropdown');
+        });
+        
+        document.addEventListener('click', function(event) {
+            var dropdown = document.getElementById('user-dropdown');
+            var userLink = document.getElementById('user-dropdown-toggle');
+            
+            if (!userLink.contains(event.target) && !dropdown.contains(event.target)) {
+                dropdown.classList.remove('show-dropdown');
+            }
+        });
+    </script>
 </body>
 
 </html>

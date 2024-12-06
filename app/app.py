@@ -1,5 +1,5 @@
 from flask import Flask, abort, redirect, render_template, request, session, url_for
-from routes import login_bp, register_bp, homepage_bp, cart_bp, paid_orders_bp, medicinemanager_bp, product_detail_bp, receiptmanager_bp, datasetmanager_bp, employeemanager_bp
+from routes import login_bp, register_bp, homepage_bp, cart_bp, paid_orders_bp, medicinemanager_bp, product_detail_bp, receiptmanager_bp, datasetmanager_bp, employeemanager_bp, userinfo_bp
 import os
 from dotenv import load_dotenv
 
@@ -19,6 +19,7 @@ app.register_blueprint(product_detail_bp)
 app.register_blueprint(receiptmanager_bp)
 app.register_blueprint(datasetmanager_bp)
 app.register_blueprint(employeemanager_bp)
+app.register_blueprint(userinfo_bp)
 
 # @app.before_request
 # def check_permissions():
