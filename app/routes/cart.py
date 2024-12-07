@@ -90,6 +90,7 @@ def process_payment():
     connection = create_connection()
     cur = connection.cursor()
     idkh = session['user'][0]
+
     select_total_query = """
         SELECT SUM(ct.soLuong * ct.giaTien)
         FROM chitiethoadon ct
@@ -105,6 +106,29 @@ def process_payment():
         WHERE idkh = %s AND trangThai = 'chua thanh toan'
     """
     cur.execute(update_query, (total_value, idkh))
+ 
+    select_cart_items_query = """
+        SELECT ct.idThuoc, ct.soLuong
+        FROM chitiethoadon ct
+        JOIN hoadon h ON ct.idhd = h.id
+        WHERE h.idkh = %s AND h.trangThai = 'chua thanh toan'
+    """
+    cur.execute(select_cart_items_query, (idkh,))
+    cart_items = cur.fetchall()
+    
+    for id_thuoc, so_luong in cart_items:
+        update_quantity_query = """
+            UPDATE thuoc
+            SET quantity = quantity - %s
+            WHERE id = %s AND quantity >= %s
+        """
+        cur.execute(update_quantity_query, (so_luong, id_thuoc, so_luong))
+
+        if cur.rowcount == 0:
+            connection.rollback()
+            cur.close()
+            connection.close()
+            return "Không đủ hàng trong kho!", 400
 
     update_status_query = """
         UPDATE hoadon
@@ -113,12 +137,12 @@ def process_payment():
     """
     cur.execute(update_status_query, (idkh,))
 
-
     connection.commit()
     cur.close()
     connection.close()
 
     return redirect(url_for('cart.cart'))
+
 
 @cart_bp.route('/cancel_order', methods=['POST'])
 def cancel_order():

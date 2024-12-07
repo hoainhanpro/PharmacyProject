@@ -269,6 +269,13 @@
         .order-btn-container button:active {
             background-color: #1e7e34;
         }
+
+        /* Thông báo hết hàng */
+        #out-of-stock-message {
+            color: red;
+            display: none;
+            margin-top: 10px;
+        }
     </style>
 
 </head>
@@ -351,43 +358,41 @@
                 <span>{{ product[8] }}</span>
             </div>
 
-            <form action="{{ url_for('product_detail.add_to_cart') }}" method="POST">
+            <div class="info-row">
+                <strong>Hàng trong kho:</strong>
+                <span>{{ product[20] }}</span>
+            </div>
+
+            <!-- Thông báo hết hàng -->
+            <div id="out-of-stock-message" style="color: red; display: none;">Hết hàng</div>
+
+            <form action="{{ url_for('product_detail.add_to_cart') }}" method="POST" id="add-to-cart-form">
                 <input type="hidden" name="webName" value="{{ product[14] }}">
                 <label for="quantity">Số lượng:</label>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" max="10">
+                <input type="number" id="quantity" name="quantity" value="1" min="1" max="{{ product[20] }}">
                 <div class="order-btn-container">
-                    <button type="submit">Thêm vào giỏ</button>
+                    <button type="submit" id="add-to-cart-btn">Thêm vào giỏ</button>
                 </div>
             </form>
-
         </div>
     </div>
 
-    <div style="margin-top: 750px;">
-        <h1 style="font-size: 30px; color: #FF5733; text-align:center;">Thông tin chi tiết sản phẩm</h1>
-    </div>
+    <script>
+        window.onload = function() {
+            const quantityInput = document.getElementById("quantity");
+            const addToCartBtn = document.getElementById("add-to-cart-btn");
+            const outOfStockMessage = document.getElementById("out-of-stock-message");
+            const stockQuantity = parseInt(quantityInput.getAttribute("max"));
 
-    <div class="additional-container">
-        <div>
-            <strong>Công dụng</strong>
-            <p>{{ product[9] }}</p>
-            <strong>Thành phần</strong>
-            <p>{{ product[11] }}</p>
-            <strong>Cách dùng</strong>.
-            <p>{{ product[2]}} </p>
-            <strong>Độ tuổi quy định </strong>
-            <p>{{ product[3]}}</p>
-            <strong>Tác dụng phụ</strong>
-            <p>{{ product[8]}} </p>
-            <strong style="color: #FF0000;">Lưu ý</strong>
-            <p>{{ product[13]}} </p>
-            <p>{{ product[17]}} </p>
-            <strong>Bảo quản</strong>
-            <p>{{ product[6]}} </p>
-        </div>
-
-    </div>
-
+            if (stockQuantity === 0) {
+                addToCartBtn.style.display = "none";  
+                outOfStockMessage.style.display = "block";  
+            } else {
+                addToCartBtn.style.display = "block";  
+                outOfStockMessage.style.display = "none";  
+            }
+        };
+    </script>
 </body>
 
 </html>
