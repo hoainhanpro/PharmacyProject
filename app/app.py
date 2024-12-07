@@ -59,7 +59,8 @@ def check_permissions():
                         'paid_orders.paid_orders',
                         'paid_orders.order_details',
                         'product_detail.product_detail',
-                        'product_detail.add_to_cart'}
+                        'product_detail.add_to_cart',
+                        'userinfo.user_info',}
     }
     endpoint = request.endpoint
 
