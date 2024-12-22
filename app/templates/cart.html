@@ -54,7 +54,7 @@
             position: absolute;
             top: 0px;
             left: 1220px;
-            width: 300px;
+            width: 270px;
             height: 50px;
             border-top: 2px solid black;
             border-left: none;
@@ -189,7 +189,19 @@
 </head>
 
 <body>
-
+    <body>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div style="position: fixed; top: 10px; left: 50%; transform: translateX(-50%); z-index: 1000; width: 300px;">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }}" role="alert">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+    
     <!-- Menu Box -->
     <div class="menu-box-border">
         <a href="http://127.0.0.1:5000/" style="text-decoration: none; color: white;">

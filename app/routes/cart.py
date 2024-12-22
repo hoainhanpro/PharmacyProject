@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, session, url_for, Blueprint
+from flask import Flask, render_template, redirect, session, url_for, Blueprint, flash
 from services.database import create_connection
 from dotenv import load_dotenv
 
@@ -100,23 +100,19 @@ def process_payment():
     cur.execute(select_total_query, (idkh,))
     total_value = cur.fetchone()[0] 
 
-    update_query = """
-        UPDATE hoadon
-        SET tongTien = %s
-        WHERE idkh = %s AND trangThai = 'chua thanh toan'
-    """
-    cur.execute(update_query, (total_value, idkh))
- 
     select_cart_items_query = """
-        SELECT ct.idThuoc, ct.soLuong
+        SELECT ct.idThuoc, t.webName, ct.soLuong
         FROM chitiethoadon ct
+        JOIN thuoc t ON ct.idThuoc = t.id
         JOIN hoadon h ON ct.idhd = h.id
         WHERE h.idkh = %s AND h.trangThai = 'chua thanh toan'
     """
     cur.execute(select_cart_items_query, (idkh,))
     cart_items = cur.fetchall()
-    
-    for id_thuoc, so_luong in cart_items:
+
+    insufficient_items = []
+
+    for id_thuoc, web_name, so_luong in cart_items:
         update_quantity_query = """
             UPDATE thuoc
             SET quantity = quantity - %s
@@ -124,25 +120,29 @@ def process_payment():
         """
         cur.execute(update_quantity_query, (so_luong, id_thuoc, so_luong))
 
-        if cur.rowcount == 0:
-            connection.rollback()
-            cur.close()
-            connection.close()
-            return "Không đủ hàng trong kho!", 400
+        if cur.rowcount == 0:  
+            insufficient_items.append(web_name)
+
+    if insufficient_items:
+        connection.rollback()
+        cur.close()
+        connection.close()
+        flash("Không đủ hàng trong kho cho các sản phẩm: " + ", ".join(insufficient_items), 'danger')
+        return redirect(url_for('cart.cart'))
 
     update_status_query = """
         UPDATE hoadon
-        SET trangThai = 'da thanh toan'
+        SET tongTien = %s, trangThai = 'da thanh toan'
         WHERE idkh = %s AND trangThai = 'chua thanh toan'
     """
-    cur.execute(update_status_query, (idkh,))
+    cur.execute(update_status_query, (total_value, idkh))
 
     connection.commit()
     cur.close()
     connection.close()
 
+    flash("Thanh toán thành công!", 'success')
     return redirect(url_for('cart.cart'))
-
 
 @cart_bp.route('/cancel_order', methods=['POST'])
 def cancel_order():
